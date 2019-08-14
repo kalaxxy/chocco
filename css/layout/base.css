@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 18px/1.7 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  min-width: 1100px;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.container--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul>li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,14 @@
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__list .menu__item {
+  margin-right: 30px;
+}
+
+.menu__list .menu__item:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=menu.css.map */

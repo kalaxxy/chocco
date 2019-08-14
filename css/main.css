@@ -1,0 +1,176 @@
+@import url("../css/layout/normalize.css");
+@import url("../css/layout/fonts.css");
+@import url("../css/layout/base.css");
+.header {
+  padding-top: 24px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .menu__item {
+  margin-right: 30px;
+}
+
+.menu .menu__item:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  max-width: 60px;
+  font-size: 24px;
+  line-height: 21px;
+  font-family: 'Museo Sans Cyrl 500';
+}
+
+.contacts {
+  font-size: 24px;
+}
+
+.tel {
+  position: relative;
+}
+
+.tel:before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 11px;
+  background-image: url("../img/icons/phone.png");
+  top: 0.5rem;
+  left: -1rem;
+}
+
+.section-wrap {
+  background-color: #61c4d9;
+  background-image: url("../img/leaf.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 100vh;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin-top: 87px;
+  margin-bottom: 5px;
+}
+
+.button {
+  display: inline-block;
+  padding: 21px 37px;
+  border-radius: 29px;
+  background-color: #fff;
+  color: #0f5a47;
+  font-weight: 800;
+  line-height: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 68px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.button:hover {
+  background-color: #0f5a47;
+  color: #fff;
+}
+
+.first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 44px;
+}
+
+.first__text {
+  max-width: 70%;
+  font-size: 21px;
+  line-height: 1.7rem;
+  margin-bottom: 28px;
+}
+
+.first__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 1.3rem;
+}
+
+.first__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 28%;
+  margin-right: 16px;
+}
+
+.first__icon--leaf {
+  background: url("../img/icons/icon_leaf.png") center center no-repeat;
+}
+
+.first__icon--delivery {
+  background: url("../img/icons/icon_delivery.png") center center no-repeat;
+}
+
+.first__icon--metric {
+  background: url("../img/icons/icon_metric.png") center center no-repeat;
+}
+
+.first__icon {
+  width: 83px;
+  height: 42px;
+  margin-right: 4px;
+}
+
+.first__icon:last-child {
+  margin-right: 0;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  margin-left: -35px;
+  margin-top: -92px;
+}
+
+.pagination__link {
+  display: block;
+  position: relative;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.pagination__link--active:before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.pagination__link:hover {
+  background-color: #0f5a47;
+}
+/*# sourceMappingURL=main.css.map */
