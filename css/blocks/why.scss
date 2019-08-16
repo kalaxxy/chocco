@@ -1,0 +1,68 @@
+.why {
+  background-image: url('../img/leaf_2.png');
+  background-position-y: 25%;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 161px;
+    height: 315px;
+    background-image: url('../img/berries_2.png');
+  }
+
+  &__desc {
+    color: $gray;
+    max-width: 44%;
+    line-height: 1.5rem;
+    margin: 0 auto 53px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-right: 70px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: $lightgray;
+    margin: 0 auto 20px;
+  }
+
+  &__title {
+    font-size: 27px;
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: 1.4rem;
+  }
+
+}
+
+@each $icon in (healthy, yammy, strength) {
+  .why__icon--#{$icon}.why__icon:before {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 69px;
+    background-image: url('../img/icons/#{$icon}.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: translate(-50%, 45%);
+  }
+}

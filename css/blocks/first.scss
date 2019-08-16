@@ -1,4 +1,62 @@
-.bg-wrap {
+.first {
+  position: relative;
   background-color: $blue;
-  background: url('../../img/leaf.png') right no-repeat;
+  background-image: url('../img/leaf.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  color: #fff;
+
+  &:after {
+    content: '';
+    @include decoration;
+    width: 1053px;
+    height: 350px;
+    background: url('../img/berries.png') no-repeat;
+    bottom: -9%;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 44px;
+  }
+
+  &__text {
+    max-width: 70%;
+    font-size: 21px;
+    line-height: 1.7rem;
+    margin-bottom: 28px;
+  }
+
+  &__list {
+    display: flex;
+    font-size: 16px;
+    line-height: 1.3rem;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    min-width: 28%;
+    margin-right: 16px;
+  }
+
+  @each $icon in (leaf, delivery, metric) {
+    &__icon--#{$icon} {
+      background: url('../img/icons/icon_#{$icon}.png') center center no-repeat;
+    }
+  }
+
+  &__icon {
+    width: 83px;
+    height: 42px;
+    margin-right: 4px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__chocco {
+    min-width: 100%;
+  }
 }

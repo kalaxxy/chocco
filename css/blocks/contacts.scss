@@ -1,0 +1,17 @@
+.contacts {
+  font-size: 24px;
+}
+
+.tel {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 11px;
+    background-image: url('../img/icons/phone.png');
+    top: 0.5rem;
+    left: -1rem;
+  }
+}

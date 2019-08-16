@@ -4,11 +4,11 @@
   display: flex;
 }
 
-.menu__list .menu__item {
+.menu .menu__item {
   margin-right: 30px;
 }
 
-.menu__list .menu__item:last-child {
+.menu .menu__item:last-child {
   margin-right: 0;
 }
 /*# sourceMappingURL=menu.css.map */

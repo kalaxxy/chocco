@@ -1,0 +1,96 @@
+.reviews {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 86px;
+    background-image: url('../img/berries_3.png');
+    right: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 135px;
+    height: 193px;
+    background-image: url('../img/berries_4.png');
+    left: 0;
+  }
+
+  &__wrap {
+    position: relative;
+    display: flex;
+    background-color: $pearl;
+    background-image: url('../img/leaf_3.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin-bottom: 27px;
+
+    &:before {
+      content: '';
+      @include decoration;
+      width: 125px;
+      height: 75px;
+      -webkit-clip-path: ellipse(35% 35% at 50% 50%);
+      background-color: #fff;
+      top: -12%;
+      z-index: 1;
+    }
+  }
+
+  &__avatar {
+    width: 253px;
+    height: 259px;
+    overflow: hidden;
+    margin: 50px 0 50px 46px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__desc {
+    margin: 50px 20px;
+    max-width: 50%;
+
+    & h3 {
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    & p {
+      color: $gray;
+    }
+
+    & h4 {
+      color: $gray;
+      font-weight: 500;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+
+    &--active {
+      border: 5px solid $green;
+    }
+  }
+  &__preview {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
