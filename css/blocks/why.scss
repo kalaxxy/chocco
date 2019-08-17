@@ -12,57 +12,76 @@
     height: 315px;
     background-image: url('../img/berries_2.png');
   }
+}
 
-  &__desc {
-    color: $gray;
-    max-width: 44%;
-    line-height: 1.5rem;
-    margin: 0 auto 53px;
+.why__desc {
+  color: $gray;
+  max-width: 44%;
+  line-height: 1.5rem;
+  margin: 0 auto 53px;
+}
+
+.why__list {
+  display: flex;
+}
+
+.why__item {
+  flex: 1;
+  margin-right: 70px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.why__icon {
+  position: relative;
+  display: inline-block;
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  background-color: $lightgray;
+  margin-bottom: 20px;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 68px;
+    height: 22px;
+    background-image: url('../../img/separator.png');
+    margin-left: 196px;
+    margin-top: 50px;
   }
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__item {
-    margin-right: 70px;
-
-    &:last-child {
-      margin-right: 0;
+  &:last-child {
+    &:after {
+      display: none;
     }
   }
-
-  &__icon {
-    position: relative;
-    width: 126px;
-    height: 126px;
-    border-radius: 50%;
-    background-color: $lightgray;
-    margin: 0 auto 20px;
-  }
-
-  &__title {
-    font-size: 27px;
-    margin-bottom: 13px;
-  }
-
-  &__text {
-    font-weight: 300;
-    line-height: 1.4rem;
-  }
-
 }
 
 @each $icon in (healthy, yammy, strength) {
   .why__icon--#{$icon}.why__icon:before {
     content: '';
     position: absolute;
-    width: 75px;
-    height: 69px;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
     background-image: url('../img/icons/#{$icon}.png');
     background-position: center center;
     background-repeat: no-repeat;
-    transform: translate(-50%, 45%);
+    background-size: contain;
+    transform: translate(-50%, -50%);
   }
+}
+
+.why__title {
+  font-size: 27px;
+  margin-bottom: 13px;
+}
+
+.why__text {
+  font-weight: 300;
+  line-height: 1.4rem;
 }

@@ -2,16 +2,15 @@
   font-size: 24px;
 }
 
-.tel {
+.contacts__tel {
   position: relative;
 
   &:before {
     content: '';
-    position: absolute;
+    display: inline-block;
+    margin-right: 5px;
     width: 12px;
     height: 11px;
-    background-image: url('../img/icons/phone.png');
-    top: 0.5rem;
-    left: -1rem;
+    background-image: url("../img/icons/phone.png");
   }
 }

@@ -7,7 +7,6 @@
   font-weight: 800;
   line-height: 1rem;
   text-transform: uppercase;
-  margin-bottom: 68px;
   transition: 0.4s;
   z-index: 2;
 
@@ -15,4 +14,8 @@
     background-color: $green;
     color: #fff;
   }
+}
+
+.first__button {
+  margin-bottom: 68px;
 }

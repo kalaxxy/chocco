@@ -1,11 +1,7 @@
-.section {
-  height: 100vh;
-}
-
 .title {
   text-transform: uppercase;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 1;
   margin-top: 87px;
   margin-bottom: 5px;
 }
@@ -13,7 +9,7 @@
 .section-title {
   font-size: 48px;
   text-transform: uppercase;
-  line-height: 4rem;
+  line-height: 1;
   text-align: center;
 
   &--why {
@@ -21,7 +17,7 @@
   }
 
   &--reviews {
-    z-index: 2;
+    z-index: $z_index_title;
     margin-bottom: 33px;
   }
 }

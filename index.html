@@ -14,8 +14,8 @@
     <main class="main">
       <section class="section first">
         <header class="header">
-          <div class="container container--flex">
-            <div class="logo">CHO CCO</div>
+          <div class="container container--flex--row">
+            <a href="#" class="logo"><div class="logo__text">CHO CCO</div></a>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
@@ -56,18 +56,20 @@
               </ul>
             </nav>
             <div class="contacts">
-              <a href="tel:88009039090" class="tel">8 800 903 90 90</a>
+              <a href="tel:88009039090" class="contacts__tel">8 800 903 90 90</a>
             </div>
           </div>
         </header>
-        <div class="container container--flex">
+        <div class="container container--flex--row">
           <div class="first__content">
             <div class="first__col">
               <div class="first__desc">
                 <h1 class="title">Натуральные шоколадные батончики</h1>
                 <p class="first__text">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
               </div>
-              <a href="#" class="button">Заказать</a>
+              <div class="first__button">
+                <a href="#" class="button">Заказать</a>
+              </div>
               <div class="first__features">
                 <ul class="first__list">
                   <li class="first__item">
@@ -89,74 +91,47 @@
               <img src="img/chocco.png" alt="" class="first__chocco">
             </div>
           </div>
-          <aside class="sidebar">
-            <div class="pagination">
-              <ul class="pagination__list">
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link pagination__link--active"></a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link"></a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link"></a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link"></a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link"></a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link"></a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link"></a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link"></a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link"></a>
-                </li>
-              </ul>
-            </div>
-          </aside>
         </div>
       </section>
       <section class="section why">
-        <div class="container">
+        <div class="container container--flex">
           <h2 class="section-title section-title--why">Почему Chocco?</h2>
-          <div class="why__desc">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно
-            взять с собой.</div>
+          <p class="why__desc">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно
+            взять с собой.</p>
           <ul class="why__list">
             <li class="why__item">
               <div class="why__icon why__icon--healthy"></div>
-              <h3 class="why__title">Полезно</h3>
-              <div class="why__text">Натуральность - ключевое качество нашей продукции. Мы используем только природные
-                ингредиенты.</div>
+              <div class="why__elem">
+                <h3 class="why__title">Полезно</h3>
+                <p class="why__text">Натуральность - ключевое качество нашей продукции. Мы используем только природные
+                  ингредиенты.</p>
+              </div>
             </li>
             <li class="why__item">
               <div class="why__icon why__icon--yammy"></div>
-              <h3 class="why__title">Вкусно</h3>
-              <div class="why__text">Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших
-                батончиков.</div>
+              <div class="why__elem">
+                <h3 class="why__title">Вкусно</h3>
+                <p class="why__text">Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших
+                  батончиков.</p>
+              </div>
             </li>
             <li class="why__item">
               <div class="why__icon why__icon--strength"></div>
-              <h3 class="why__title">Питательно</h3>
-              <div class="why__text">Высокое содержание качественного белка, а также всех необходимых витаминов и
-                минералов.</div>
+              <div class="why__elem">
+                <h3 class="why__title">Питательно</h3>
+                <p class="why__text">Высокое содержание качественного белка, а также всех необходимых витаминов и
+                  минералов.</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="section reviews">
-        <div class="container">
+        <div class="container container--flex">
           <h2 class="section-title section-title--reviews">Отзывы</h2>
           <div class="reviews__wrap">
             <div class="reviews__avatar">
-              <img src="img/users/alena.jpg" alt="" class="reviews__img">
+              <img src="img/users/alena.jpg" alt="Отзыв - Алена Хмельницкая" class="reviews__img">
             </div>
             <div class="reviews__desc">
               <h3>Лучший перекус</h3>
@@ -171,19 +146,56 @@
           </div>
           <ul class="reviews__list">
             <li class="reviews__item reviews__item--active">
-              <img src="img/users/alena.jpg" alt="" class="reviews__preview">
+              <a href="#" class="reviews__link">
+                <img src="img/users/alena.jpg" alt="Превью отзыва - Алена Хмельницкая" class="reviews__preview">
+              </a>
             </li>
             <li class="reviews__item">
-              <img src="img/users/user2.jpg" alt="" class="reviews__preview">
+              <a href="#" class="reviews__link">
+                <img src="img/users/user2.jpg" alt="Превью отзыва - User2" class="reviews__preview">
+              </a>
             </li>
             <li class="reviews__item">
-              <img src="img/users/user3.jpg" alt="" class="reviews__preview">
+              <a href="#" class="reviews__link">
+                <img src="img/users/user3.jpg" alt="Превью отзыва - User3" class="reviews__preview">
+              </a>
             </li>
           </ul>
         </div>
       </section>
     </main>
   </div>
-</body>
+  <div class="pagination">
+    <ul class="pagination__list">
+      <li class="pagination__item">
+        <a href="#" class="pagination__link pagination__link--active"></a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link"></a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link"></a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link"></a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link"></a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link"></a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link"></a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link"></a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="pagination__link"></a>
+      </li>
+    </ul>
+  </div>
 
+</body>
 </html>

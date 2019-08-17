@@ -2,7 +2,7 @@
   position: relative;
   background-color: $blue;
   background-image: url('../img/leaf.png');
-  background-position: right;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
   color: #fff;
 
@@ -13,50 +13,52 @@
     height: 350px;
     background: url('../img/berries.png') no-repeat;
     bottom: -9%;
+    z-index: $z-index-berries;
   }
+}
 
-  &__content {
-    display: flex;
-    margin-bottom: 44px;
+.first__content {
+  display: flex;
+  margin-bottom: 44px;
+  z-index: $z-index-first;
+}
+
+.first__text {
+  max-width: 70%;
+  font-size: 21px;
+  line-height: 1.7rem;
+  margin-bottom: 28px;
+}
+
+.first__list {
+  display: flex;
+  font-size: 16px;
+  line-height: 1.3rem;
+}
+
+.first__item {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
   }
+}
 
-  &__text {
-    max-width: 70%;
-    font-size: 21px;
-    line-height: 1.7rem;
-    margin-bottom: 28px;
+.first__icon {
+  width: 83px;
+  height: 42px;
+  margin-right: 4px;
+}
+
+@each $icon in (leaf, delivery, metric) {
+  .first__icon--#{$icon} {
+    background: url('../img/icons/icon_#{$icon}.png') center center no-repeat;
   }
+}
 
-  &__list {
-    display: flex;
-    font-size: 16px;
-    line-height: 1.3rem;
-  }
-
-  &__item {
-    display: flex;
-    justify-content: space-between;
-    min-width: 28%;
-    margin-right: 16px;
-  }
-
-  @each $icon in (leaf, delivery, metric) {
-    &__icon--#{$icon} {
-      background: url('../img/icons/icon_#{$icon}.png') center center no-repeat;
-    }
-  }
-
-  &__icon {
-    width: 83px;
-    height: 42px;
-    margin-right: 4px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  &__chocco {
-    min-width: 100%;
-  }
+.first__chocco {
+  min-width: 100%;
 }

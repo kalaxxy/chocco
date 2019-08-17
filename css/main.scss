@@ -1,11 +1,22 @@
-@import url('../css/layout/normalize.css');
-@import url('../css/layout/fonts.css');
-@import url('../css/layout/base.css');
-@import 'layout/general';
-@import 'layout/colors';
+$blue: #61c4d9;
+$green: #0f5a47;
+$gray: #666666;
+$lightgray: #f2f5f4;
+$pearl: #f8faf9;
+
+$z_index_berries: 1;
+$z_index_title: 5;
+$z_index_first: 10;
+$z_index_pagination: 50;
+
+@import 'layout/normalize';
+@import 'layout/fonts';
+@import 'layout/base';
 @import 'layout/mixin';
 
+@import 'blocks/section';
 @import 'blocks/header';
+@import 'blocks/title';
 @import 'blocks/logo';
 @import 'blocks/menu';
 @import 'blocks/contacts';
