@@ -803,6 +803,7 @@ a {
 }
 
 .why__item {
+  position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -819,8 +820,8 @@ a {
   width: 68px;
   height: 22px;
   background-image: url("../img/separator.png");
-  margin-left: 130px;
-  margin-top: -220px;
+  left: 100%;
+  top: 20%;
 }
 
 .why__item:last-child:after {

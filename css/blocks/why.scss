@@ -26,6 +26,7 @@
 }
 
 .why__item {
+  position: relative;
   flex: 1;
   margin-right: 70px;
 
@@ -39,8 +40,8 @@
     width: 68px;
     height: 22px;
     background-image: url('../img/separator.png');
-    margin-left: 130px;
-    margin-top: -220px;
+    left: 100%;
+    top: 20%;
   }
 
   &:last-child {
