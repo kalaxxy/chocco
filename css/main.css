@@ -813,6 +813,20 @@ a {
   margin-right: 0;
 }
 
+.why__item:after {
+  content: '';
+  position: absolute;
+  width: 68px;
+  height: 22px;
+  background-image: url("../img/separator.png");
+  margin-left: 130px;
+  margin-top: -220px;
+}
+
+.why__item:last-child:after {
+  display: none;
+}
+
 .why__icon {
   position: relative;
   display: inline-block;
@@ -821,20 +835,6 @@ a {
   border-radius: 50%;
   background-color: #f2f5f4;
   margin-bottom: 20px;
-}
-
-.why__icon:after {
-  content: '';
-  display: inline-block;
-  width: 68px;
-  height: 22px;
-  background-image: url("../img/separator.png");
-  margin-left: 196px;
-  margin-top: 50px;
-}
-
-.why__icon:last-child:after {
-  display: none;
 }
 
 .why__icon--healthy.why__icon:before {

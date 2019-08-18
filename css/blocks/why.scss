@@ -32,6 +32,22 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 68px;
+    height: 22px;
+    background-image: url('../img/separator.png');
+    margin-left: 130px;
+    margin-top: -220px;
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
 }
 
 .why__icon {
@@ -43,21 +59,6 @@
   background-color: $lightgray;
   margin-bottom: 20px;
 
-  &:after {
-    content: '';
-    display: inline-block;
-    width: 68px;
-    height: 22px;
-    background-image: url('../img/separator.png');
-    margin-left: 196px;
-    margin-top: 50px;
-  }
-
-  &:last-child {
-    &:after {
-      display: none;
-    }
-  }
 }
 
 @each $icon in (healthy, yammy, strength) {
