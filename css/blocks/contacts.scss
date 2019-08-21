@@ -1,5 +1,6 @@
 .contacts {
   font-size: 24px;
+  font-style: normal;
 }
 
 .contacts__tel {
@@ -13,4 +14,22 @@
     height: 11px;
     background-image: url("../img/icons/phone.png");
   }
+
+  &--green {
+    color: $green;
+    font-size: 21px;
+
+    &:before {
+      content: '';
+    display: inline-block;
+    margin-right: 5px;
+    width: 12px;
+    height: 11px;
+    background-image: url("../img/icons/phone_green.png");
+    }
+  }
+}
+
+.contacts__adr {
+  font-size: 21px;
 }

@@ -15,7 +15,9 @@
       <section class="section first">
         <header class="header">
           <div class="container container--flex--row">
-            <a href="#" class="logo"><div class="logo__text">CHO CCO</div></a>
+            <a href="#" class="logo">
+              <div class="logo__text">CHO CCO</div>
+            </a>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
@@ -73,15 +75,21 @@
               <div class="first__features">
                 <ul class="first__list">
                   <li class="first__item">
-                    <div class="first__icon first__icon--leaf"></div>
+                      <svg class="first__icon">
+                        <use xlink:href="img/icons/sprite.svg#icon-leaf" ></use>
+                      </svg>
                     <div class="first__feature">100% натуральный продукт</div>
                   </li>
                   <li class="first__item">
-                    <div class="first__icon first__icon--delivery"></div>
+                    <svg class="first__icon">
+                      <use xlink:href="img/icons/sprite.svg#icon-delivery" ></use>
+                    </svg>
                     <div class="first__feature">3-5 дней доставка по РФ</div>
                   </li>
                   <li class="first__item">
-                    <div class="first__icon first__icon--metric"></div>
+                    <svg class="first__icon">
+                      <use xlink:href="img/icons/sprite.svg#icon-metric" ></use>
+                    </svg>
                     <div class="first__feature">Не портит фигуру</div>
                   </li>
                 </ul>
@@ -126,6 +134,61 @@
           </ul>
         </div>
       </section>
+      <section class="section team">
+        <div class="container container--flex">
+          <h2 class="section-title section-title--team">Команда</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <div class="team__photo">
+                <img src="img/team/boris.jpg" alt="Борис Федорович" class="team__avatar">
+              </div>
+              <div class="team__text">
+                <h3>Борис Федорович</h3>
+                <div class="team__desc">
+                  <h4>Главный технолог</h4>
+                  <p>Отвечает за вкусовые качества и калорийность.</p>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__photo">
+                <img src="img/team/alla.jpg" alt="Алла Иванова" class="team__avatar">
+              </div>
+              <div class="team__text">
+                <h3>Алла Иванова</h3>
+                <div class="team__desc">
+                  <h4>Специалист по упаковке</h4>
+                  <p>Автор запоминающегося стиля наших батончиков.</p>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__photo">
+                <img src="img/team/kirill.jpg" alt="Кирилл Матросов" class="team__avatar">
+              </div>
+              <div class="team__text team__text--active">
+                <h3>Кирилл Матросов</h3>
+                <div class="team__desc">
+                  <h4>Оператор</h4>
+                  <p>С радостью поможет подобрать батончики и оформить заказ.</p>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__photo">
+                <img src="img/team/mila.jpg" alt="Мила Рыжкова" class="team__avatar">
+              </div>
+              <div class="team__text">
+                <h3>Мила Рыжкова</h3>
+                <div class="team__desc">
+                  <h4>PR, маркетинг</h4>
+                  <p>По всем вопросам сотрудничества и рекламы писать только Миле.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="section reviews">
         <div class="container container--flex">
           <h2 class="section-title section-title--reviews">Отзывы</h2>
@@ -163,6 +226,144 @@
           </ul>
         </div>
       </section>
+      <section class="section taste">
+          <div class="container container--flex--row">
+            <h2 class="section-title section-title--taste">Меню</h2>
+            <ul class="taste__list">
+              <li class="taste__item">
+                <button type="button" class="taste__btn taste__btn--milk">
+                  <h3 class="taste__title">Батончики с молоком</h3>
+                </button>
+                <div class="taste__desc taste__desc--active">
+                  <div class="taste__text">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
+                    Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+                    </div>
+                </div>
+              </li>
+              <li class="taste__item">
+                <button type="button" class="taste__btn taste__btn--honey">
+                  <h3 class="taste__title">Батончики с молоком</h3>
+                </button>
+                <div class="taste__desc">
+                  <div class="taste__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus facilis
+                    at enim quos. Itaque unde aliquid ea nobis nihil accusamus corrupti temporibus recusandae alias, saepe
+                    atque nam totam officiis.</div>
+                </div>
+              </li>
+              <li class="taste__item">
+                <button type="button" class="taste__btn taste__btn--berries">
+                  <h3 class="taste__title">Батончики с молоком</h3>
+                </button>
+                <div class="taste__desc">
+                  <div class="taste__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus facilis
+                    at enim quos. Itaque unde aliquid ea nobis nihil accusamus corrupti temporibus recusandae alias, saepe
+                    atque nam totam officiis.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      <section class="section order">
+        <div class="container container--flex">
+          <h2 class="section-title section-title--order">Закажите доставку</h2>
+          <form action="get" class="form">
+            <div class="form__col">
+              <div class="form__row">
+                <label class="form__elem">
+                  <span class="form__title">Имя</span>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__elem">
+                  <span class="form__title">Телефон</span>
+                  <input type="text" class="form__input">
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__elem">
+                  <span class="form__title">Улица</span>
+                  <input type="text" class="form__input">
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__elem">
+                  <span class="form__title">Дом</span>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__elem">
+                  <span class="form__title">Корпус</span>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__elem">
+                  <span class="form__title">Квартира</span>
+                  <input type="text" class="form__input">
+                </label>
+                <label class="form__elem">
+                  <span class="form__title">Этаж</span>
+                  <input type="text" class="form__input">
+                </label>
+              </div>
+            </div>
+            <div class="form__col">
+              <div class="form__row">
+                <label class="form__elem">
+                  <span class="form__title">Комментарий</span>
+                  <textarea type="textarea" class="form__input form__input--textarea"></textarea>
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__radio">
+                  <input type="radio" name="pay" value="cash" class="form__radio-btn">
+                  <span class="form__radio-custom"></span>
+                  <span class="form__title form__title--radio">Потребуется сдача</span>
+                </label>
+                <label class="form__radio">
+                  <input type="radio" name="pay" value="card" class="form__radio-btn" checked="checked">
+                  <span class="form__radio-custom"></span>
+                  <span class="form__title form__title--radio">Оплата по карте</span>
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__radio">
+                  <input type="checkbox" name="call" class="form__checkbox-btn" checked="checked">
+                  <span class="form__checkbox-custom"></span>
+                  <span class="form__title">Не перезванивать</span>
+                </label>
+              </div>
+              <div class="form__row">
+                <button type="submit" class="button button--form">Заказать</button>
+                <button type="reset" class="button__reset">Очистить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="section map">
+
+      </section>
+      <footer class="footer">
+        <div class="container container--flex--row">
+          <address class="contacts">
+            <div class="contacts__adr">Москва, ул. Новый Арбат, д. 31/12</div>
+            <a href="tel:88009039090" class="contacts__tel--green">8 800 903 90 90</a>
+          </address>
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="#" class="socials__link socials__link--vk"></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link socials__link--fb"></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link socials__link--inst"></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link socials__link--tw"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </main>
   </div>
   <div class="pagination">
@@ -198,4 +399,5 @@
   </div>
 
 </body>
+
 </html>

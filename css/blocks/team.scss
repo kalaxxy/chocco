@@ -1,0 +1,82 @@
+.team {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 196px;
+    height: 598px;
+    background: url('../../img/leaf_4.png') center center no-repeat;
+    right: 0;
+    top: -35%;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 104px;
+    height: 114px;
+    background: url('../../img/berries_5.png');
+    left: 0;
+    bottom: 1%;
+  }
+
+}
+
+.team__list {
+  display: flex;
+  text-align: center;
+  z-index: $z_index_content;
+}
+
+.team__item {
+  flex: 1;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.team__photo {
+  width: 220px;
+  height: 290px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.team__avatar {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.team__text {
+
+  h3:after {
+    content: '\25BC';
+    display: inline-block;
+  }
+
+  p {
+    color: $gray;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}
+
+.team__desc {
+  height: 0;
+  overflow: hidden;
+}
+
+.team__text--active {
+
+  .team__desc {
+    overflow: visible;
+  }
+
+  h3:after {
+    content: '\25B2';
+  }
+}

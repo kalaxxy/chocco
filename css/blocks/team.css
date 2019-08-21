@@ -1,0 +1,63 @@
+.team {
+  position: relative;
+}
+
+.team:before {
+  content: '';
+  position: absolute;
+  width: 196px;
+  height: 598px;
+  background: url("../../img/leaf_4.png") center center no-repeat;
+  right: 0;
+  top: -35%;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  z-index: 1;
+}
+
+.team__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team__photo {
+  width: 220px;
+  height: 290px;
+  overflow: hidden;
+}
+
+.team__avatar {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team__text h3:after {
+  content: '\25BC';
+  display: inline-block;
+}
+
+.team__desc {
+  height: 0;
+  overflow: hidden;
+}
+
+.team__text--active .team__desc {
+  overflow: visible;
+}
+
+.team__text--active h3:after {
+  content: '\25B2';
+}

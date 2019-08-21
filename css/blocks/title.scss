@@ -16,8 +16,23 @@
     margin-top: 95px;
   }
 
+  &--taste {
+    position: absolute;
+    align-self: flex-start;
+    margin-top: 80px;
+  }
+
   &--reviews {
     z-index: $z_index_title;
     margin-bottom: 33px;
+  }
+
+  &--team {
+    margin-bottom: 54px;
+  }
+
+  &--order {
+    color: $green;
+    margin-bottom: 50px;
   }
 }

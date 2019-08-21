@@ -20,7 +20,7 @@
 .first__content {
   display: flex;
   margin-bottom: 44px;
-  z-index: $z-index-first;
+  z-index: $z-index-content;
 }
 
 .first__text {
@@ -51,13 +51,9 @@
   width: 83px;
   height: 42px;
   margin-right: 4px;
+  fill: #fff;
 }
 
-@each $icon in (leaf, delivery, metric) {
-  .first__icon--#{$icon} {
-    background: url('../img/icons/icon_#{$icon}.png') center center no-repeat;
-  }
-}
 
 .first__chocco {
   min-width: 100%;

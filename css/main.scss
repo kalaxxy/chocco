@@ -3,10 +3,11 @@ $green: #0f5a47;
 $gray: #666666;
 $lightgray: #f2f5f4;
 $pearl: #f8faf9;
+$darkgray: #2f3234;
 
 $z_index_berries: 1;
 $z_index_title: 5;
-$z_index_first: 10;
+$z_index_content: 10;
 $z_index_pagination: 50;
 
 @import 'layout/normalize';
@@ -24,4 +25,10 @@ $z_index_pagination: 50;
 @import 'blocks/button';
 @import 'blocks/pagination';
 @import 'blocks/why';
+@import 'blocks/team';
+@import 'blocks/taste';
 @import 'blocks/reviews';
+@import 'blocks/order';
+@import 'blocks/form';
+@import 'blocks/map';
+@import 'blocks/footer';

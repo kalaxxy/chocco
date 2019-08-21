@@ -14,8 +14,23 @@
     background-color: $green;
     color: #fff;
   }
+
+  &--form {
+    background-color: $green;
+    color: #fff;
+    margin-right: 40px;
+
+    &:hover {
+      background-color: #fff;
+      color: $green;
+    }
+  }
 }
 
 .first__button {
   margin-bottom: 68px;
+}
+
+.button__reset {
+  color: inherit;
 }

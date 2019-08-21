@@ -67,3 +67,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input, button, textarea {
+  outline: none;
+}
