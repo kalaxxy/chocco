@@ -584,10 +584,12 @@ input, button, textarea {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: 80px;
+  margin-left: 80px;
+  z-index: 10;
 }
 
 .section-title--reviews {
-  z-index: 5;
+  z-index: 10;
   margin-bottom: 33px;
 }
 
@@ -1028,15 +1030,16 @@ input, button, textarea {
   position: relative;
   color: #fff;
   background: url("../img/bg/menu.jpg") center center/cover no-repeat;
-  /*&:after {
-    content: '';
-    position: absolute;
-    background-color: rgba(0, 0, 0, .4);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }*/
+}
+
+.taste:after {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .taste__list {
@@ -1045,8 +1048,9 @@ input, button, textarea {
   display: flex;
   position: absolute;
   right: 0;
+  top: 0;
+  bottom: 0;
   height: 100%;
-  width: 50%;
   z-index: 10;
 }
 
@@ -1056,15 +1060,18 @@ input, button, textarea {
   display: flex;
 }
 
+.taste__item--active .taste__desc {
+  max-width: 560px;
+}
+
 .taste__title {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  padding: 20px;
-  bottom: 0;
   font-size: 48px;
+  z-index: 10;
 }
 
 .taste__btn--milk {
@@ -1084,11 +1091,12 @@ input, button, textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: currentColor;
+  width: 100px;
+  height: 100%;
 }
 
 .taste__btn:after {
@@ -1096,19 +1104,16 @@ input, button, textarea {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.4);
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
 }
 
 .taste__desc {
   background-color: rgba(47, 50, 52, 0.9);
-  width: 0;
+  max-width: 0;
   overflow: hidden;
   font-size: 16px;
-}
-
-.taste__desc--active {
-  width: 100%;
 }
 
 .taste__text {

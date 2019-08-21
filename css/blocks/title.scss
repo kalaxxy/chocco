@@ -20,10 +20,12 @@
     position: absolute;
     align-self: flex-start;
     margin-top: 80px;
+    margin-left: 80px;
+    z-index: $z_index_content;
   }
 
   &--reviews {
-    z-index: $z_index_title;
+    z-index: $z_index_content;
     margin-bottom: 33px;
   }
 
