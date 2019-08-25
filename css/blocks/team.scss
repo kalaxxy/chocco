@@ -24,6 +24,10 @@
     left: 0;
     bottom: 1%;
   }
+
+  @include tablets {
+    height: initial;
+  }
 }
 
 .team__list {
@@ -37,7 +41,6 @@
   flex: 1;
   margin-right: rem(20px);
   width: 25%;
-  overflow: hidden;
 
   &:last-child {
     margin-right: 0;
@@ -45,10 +48,15 @@
 
   @include tablets {
     width: 50%;
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
   }
 }
 
 .team__photo {
+  display: inline-block;
   width: rem(220px);
   height: rem(290px);
   overflow: hidden;
