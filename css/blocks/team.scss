@@ -1,6 +1,10 @@
 .team {
   position: relative;
 
+  & .container {
+    align-items: stretch;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -33,6 +37,7 @@
   flex: 1;
   margin-right: rem(20px);
   width: 25%;
+  overflow: hidden;
 
   &:last-child {
     margin-right: 0;

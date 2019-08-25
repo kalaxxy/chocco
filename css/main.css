@@ -504,6 +504,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
 .container--col {
@@ -514,6 +516,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
 }
 
 ul {
@@ -669,6 +672,12 @@ textarea {
   margin-bottom: 4%;
 }
 
+@media screen and (max-width: 480px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
 .logo__text {
   max-width: 2.5em;
   font-size: 1.5rem;
@@ -682,7 +691,7 @@ textarea {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
   .menu__list {
     display: none;
   }
@@ -762,6 +771,10 @@ textarea {
   background: url("../img/berries.png") no-repeat;
   bottom: -9%;
   z-index: 1;
+}
+
+.first .container--col {
+  height: 100%;
 }
 
 .first__content {
@@ -871,6 +884,14 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .first__features {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1014,6 +1035,12 @@ textarea {
   background: url("../img/berries_2.png") center center/contain no-repeat;
 }
 
+@media screen and (max-width: 480px) {
+  .why:after {
+    display: none;
+  }
+}
+
 .why__desc {
   color: #666666;
   max-width: 44%;
@@ -1024,6 +1051,7 @@ textarea {
 @media screen and (max-width: 768px) {
   .why__desc {
     margin-bottom: 1.25rem;
+    max-width: 70%;
   }
 }
 
@@ -1051,17 +1079,6 @@ textarea {
   margin-right: 4.375rem;
 }
 
-@media screen and (max-width: 768px) {
-  .why__item {
-    margin-right: 0;
-    margin-bottom: 1.25rem;
-    padding: 0 17%;
-  }
-  .why__item:last-child {
-    margin-bottom: 0;
-  }
-}
-
 .why__item:last-child {
   margin-right: 0;
 }
@@ -1086,9 +1103,31 @@ textarea {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .why__item {
+    margin-right: 0;
+    margin-bottom: 1.25rem;
+    padding: 0 17%;
+  }
+  .why__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .why__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+}
+
 .why__icon {
   position: relative;
-  display: inline-block;
   width: 70px;
   height: 70px;
   fill: transparent;
@@ -1111,6 +1150,19 @@ textarea {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .why__icon {
+    min-width: 4.375rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .why__elem {
+    text-align: left;
+    margin-left: 1.25rem;
+  }
+}
+
 .why__title {
   font-size: 1.6875rem;
   margin-bottom: 0.8125rem;
@@ -1123,6 +1175,12 @@ textarea {
 
 .team {
   position: relative;
+}
+
+.team .container {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .team:before {
@@ -1161,6 +1219,7 @@ textarea {
           flex: 1;
   margin-right: 1.25rem;
   width: 25%;
+  overflow: hidden;
 }
 
 .team__item:last-child {

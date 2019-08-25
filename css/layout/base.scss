@@ -38,11 +38,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: $z-index-content;
 
   &--col {
     flex-direction: column;
     justify-content: center;
-
+    height: 100%;
     }
 }
 

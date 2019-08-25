@@ -40,4 +40,8 @@
     color: $green;
     margin-bottom: 4%;
   }
+
+  @include phones {
+    font-size: rem(40px);
+  }
 }

@@ -11,6 +11,10 @@
     width: rem(161px);
     height: rem(315px);
     background: url('../img/berries_2.png') center center / contain no-repeat;
+
+    @include phones {
+      display: none;
+    }
   }
 }
 
@@ -22,6 +26,7 @@
 
   @include tablets {
     margin-bottom: rem(20px);
+    max-width: 70%;
   }
 }
 
@@ -38,16 +43,6 @@
   position: relative;
   flex: 1;
   margin-right: rem(70px);
-
-  @include tablets {
-    margin-right: 0;
-    margin-bottom: rem(20px);
-    padding: 0 17%;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
 
   &:last-child {
     margin-right: 0;
@@ -72,6 +67,23 @@
       display: none;
     }
   }
+
+  @include tablets {
+    margin-right: 0;
+    margin-bottom: rem(20px);
+    padding: 0 17%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include phones {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
 }
 
 .why__icon {
@@ -93,6 +105,18 @@
 
   @include tablets {
     margin-bottom: 0;
+  }
+
+  @include phones {
+    min-width: rem(70px);
+  }
+
+}
+
+.why__elem {
+  @include phones {
+    text-align: left;
+    margin-left: rem(20px);
   }
 }
 

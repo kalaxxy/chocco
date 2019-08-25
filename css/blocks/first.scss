@@ -16,6 +16,10 @@
     bottom: -9%;
     z-index: $z-index-berries;
   }
+
+  & .container--col {
+    height: 100%;
+  }
 }
 
 .first__content {
@@ -86,6 +90,10 @@
   align-self: flex-start;
   justify-content: center;
   width: 50%;
+
+  @include tablets {
+    align-self: center;
+  }
 
   @include phones{
     width: 100%

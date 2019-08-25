@@ -1,7 +1,7 @@
 .menu__list {
   display: flex;
 
-  @include tablets {
+  @include menu-hide {
     display: none;
   }
 }
