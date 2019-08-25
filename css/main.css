@@ -576,12 +576,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    padding-top: 1.5rem;
-  }
+  padding-top: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -632,6 +627,12 @@ textarea {
   font-size: 3.75rem;
   line-height: 1;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 2.875rem;
+  }
 }
 
 .section-title {
@@ -784,6 +785,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .first__content {
+    padding: 0;
+  }
+}
+
 .first__col {
   width: 50%;
   display: -webkit-box;
@@ -818,12 +825,26 @@ textarea {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .first__text {
+    font-size: 1.125rem;
+  }
+}
+
 .first__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 1rem;
   line-height: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .first__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .first__item {
@@ -846,11 +867,15 @@ textarea {
   z-index: 10;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .first__features {
-    padding: 0 20%;
+    width: 100%;
   }
 }
 
@@ -869,7 +894,8 @@ textarea {
 
 @media screen and (max-width: 768px) {
   .first__chocco {
-    max-width: 80%;
+    max-width: 60%;
+    max-height: 60%;
   }
 }
 
@@ -1063,62 +1089,26 @@ textarea {
 .why__icon {
   position: relative;
   display: inline-block;
-  width: 7.875rem;
-  height: 7.875rem;
+  width: 70px;
+  height: 70px;
+  fill: transparent;
+  stroke: #000;
+  margin-bottom: 1.25rem;
+}
+
+.why__icon:before {
+  content: '';
+  position: absolute;
+  width: 126px;
+  height: 126px;
   border-radius: 50%;
   background-color: #f2f5f4;
-  margin-bottom: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {
   .why__icon {
     margin-bottom: 0;
   }
-}
-
-.why__icon--healthy.why__icon:before {
-  content: '';
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  top: 50%;
-  left: 50%;
-  background-image: url("../img/sprite.svg#healthy");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.why__icon--yammy.why__icon:before {
-  content: '';
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  top: 50%;
-  left: 50%;
-  background-image: url("../img/sprite.svg#yammy");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.why__icon--strength.why__icon:before {
-  content: '';
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  top: 50%;
-  left: 50%;
-  background-image: url("../img/sprite.svg#strength");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .why__title {

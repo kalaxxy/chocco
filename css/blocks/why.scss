@@ -76,31 +76,23 @@
 
 .why__icon {
   position: relative;
-  display: inline-block;
-  width: rem(126px);
-  height: rem(126px);
-  border-radius: 50%;
-  background-color: $lightgray;
+  width: 70px;
+  height: 70px;
+  fill: transparent;
+  stroke: #000;
   margin-bottom: rem(20px);
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: $lightgray;
+  }
 
   @include tablets {
     margin-bottom: 0;
-  }
-}
-
-@each $icon in (healthy, yammy, strength) {
-  .why__icon--#{$icon}.why__icon:before {
-    content: '';
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    top: 50%;
-    left: 50%;
-    background-image: url('../img/sprite.svg##{$icon}');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: translate(-50%, -50%);
   }
 }
 

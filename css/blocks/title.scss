@@ -3,6 +3,10 @@
   font-size: rem(60px);
   line-height: 1;
   margin-bottom: 5px;
+
+  @include phones {
+    font-size: rem(46px);
+  }
 }
 
 .section-title {

@@ -28,6 +28,10 @@
     margin-bottom: 5%;
     padding: 0 20%;
   }
+
+  @include phones {
+    padding: 0;
+  }
 }
 
 .first__col {
@@ -51,12 +55,20 @@
   @include tablets {
     max-width: 90%;
   }
+
+  @include phones {
+    font-size: rem(18px);
+  }
 }
 
 .first__list {
   display: flex;
   font-size: 1rem;
   line-height: 1.3rem;
+
+  @include tablets {
+    justify-content: center;
+  }
 }
 
 .first__item {
@@ -72,9 +84,11 @@
 .first__features {
   z-index: $z-index-content;
   align-self: flex-start;
+  justify-content: center;
+  width: 50%;
 
-  @include tablets {
-    padding: 0 20%;
+  @include phones{
+    width: 100%
   }
 }
 
@@ -91,6 +105,7 @@
   margin: 0 auto;
 
   @include tablets {
-    max-width: 80%;
+    max-width: 60%;
+    max-height: 60%;
   }
 }
