@@ -47,7 +47,7 @@
   }
 
   @include tablets {
-    width: 50%;
+    min-width: 47%;
 
     &:nth-child(2) {
       margin-right: 0;

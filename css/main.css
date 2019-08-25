@@ -1233,7 +1233,7 @@ textarea {
 
 @media screen and (max-width: 768px) {
   .team__item {
-    width: 50%;
+    min-width: 47%;
   }
   .team__item:nth-child(2) {
     margin-right: 0;
@@ -1464,6 +1464,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .reviews__wrap {
+    padding: 2.5rem 0;
+  }
+}
+
 .reviews__avatar {
   max-width: 15.625rem;
   max-height: 15.625rem;
@@ -1474,6 +1480,13 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .reviews__avatar {
+    max-width: 7.75rem;
+    max-height: 7.75rem;
+  }
 }
 
 .reviews__img {

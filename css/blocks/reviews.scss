@@ -47,6 +47,10 @@
     text-align: center;
     width: 80%;
   }
+  
+  @include phones {
+    padding: rem(40px) 0;
+  }
 }
 
 .reviews__avatar {
@@ -55,6 +59,11 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+
+  @include phones {
+    max-width: rem(124px);
+    max-height: rem(124px);
+  }
 }
 
 .reviews__img {
