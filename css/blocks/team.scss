@@ -4,8 +4,8 @@
   &:before {
     content: '';
     position: absolute;
-    width: 196px;
-    height: 598px;
+    width: rem(196px);
+    height: rem(598px);
     background: url('../../img/leaf_4.png') center center no-repeat;
     right: 0;
     top: -35%;
@@ -14,35 +14,40 @@
   &:after {
     content: '';
     position: absolute;
-    width: 104px;
-    height: 114px;
-    background: url('../../img/berries_5.png');
+    width: rem(104px);
+    height: rem(114px);
+    background: url('../../img/berries_5.png') center center / contain no-repeat;
     left: 0;
     bottom: 1%;
   }
-
 }
 
 .team__list {
   display: flex;
   text-align: center;
   z-index: $z_index_content;
+  flex-wrap: wrap;
 }
 
 .team__item {
   flex: 1;
-  margin-right: 20px;
+  margin-right: rem(20px);
+  width: 25%;
 
   &:last-child {
     margin-right: 0;
   }
+
+  @include tablets {
+    width: 50%;
+  }
 }
 
 .team__photo {
-  width: 220px;
-  height: 290px;
+  width: rem(220px);
+  height: rem(290px);
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 
 .team__avatar {
@@ -60,7 +65,7 @@
 
   p {
     color: $gray;
-    font-size: 17px;
+    font-size: rem(17px);
     line-height: 1.5;
   }
 }
@@ -70,10 +75,10 @@
   overflow: hidden;
 }
 
-.team__text--active {
+.team__item--active {
 
   .team__desc {
-    overflow: visible;
+    height: fit-content;
   }
 
   h3:after {

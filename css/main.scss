@@ -11,6 +11,7 @@ $z_index_pagination: 50;
 
 @import 'layout/normalize';
 @import 'layout/fonts';
+@import 'layout/media';
 @import 'layout/base';
 @import 'layout/mixin';
 
@@ -31,3 +32,4 @@ $z_index_pagination: 50;
 @import 'blocks/form';
 @import 'blocks/map';
 @import 'blocks/footer';
+@import 'blocks/socials';

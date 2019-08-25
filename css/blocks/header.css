@@ -1,3 +1,41 @@
 .header {
-  padding-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header__hamburger {
+  display: none;
+}
+
+.header__hamburger-elem {
+  position: relative;
+  width: 24px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.header__hamburger-elem:before, .header__hamburger-elem:after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.header__hamburger-elem:before {
+  top: 200%;
+}
+
+.header__hamburger-elem:after {
+  bottom: 200%;
 }

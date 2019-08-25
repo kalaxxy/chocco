@@ -1,3 +1,50 @@
 .header {
-  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @include tablets {
+    padding-top: rem(24px);
+  }
+}
+
+.header__tel {
+  @include tablets {
+    display: none;
+  }
+}
+
+.header__hamburger {
+  display: none;
+
+  @include tablets {
+    display: flex;
+  }
+}
+
+.header__hamburger-elem {
+  position: relative;
+  width: 24px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+
+  &:before {
+    top: 200%;
+  }
+
+  &:after {
+    bottom: 200%;
+  }
 }

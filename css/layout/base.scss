@@ -7,35 +7,45 @@ body {
   height: 100%;
 }
 
+html {
+  font-size: 16px;
+
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include phones {
+    font-size: 14px;
+  }
+}
+
 body {
   font: 18px/1.7 'Alegreya Sans', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 .wrapper {
-  min-width: 100%;
+  min-width: 0;
+  width: 100%;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
+  width: 95%;
   max-width: 940px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  &--flex {
-    display: flex;
+  &--col {
     flex-direction: column;
-    flex: 1;
     justify-content: center;
-    height: 100%;
-  }
 
-  &--flex--row {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+    @include tablets {
+      justify-content: flex-start;
+    }
   }
 }
 
@@ -74,6 +84,8 @@ button {
   cursor: pointer;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   outline: none;
 }

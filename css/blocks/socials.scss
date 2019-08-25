@@ -1,25 +1,26 @@
-.socials {
-  flex: 1;
-}
-
 .socials__list {
   display: flex;
 }
 
 .socials__item {
-  margin-right: 20px;
+  margin-right: rem(20px);
 
   &:last-child {
     margin-right: 0;
   }
 }
 .socials__link {
+  display: block;
   width: 20px;
   height: 20px;
 }
 
-@each $icon in (vk, fb, insta, tw) {
-  .socials__link--#{$icon} {
-    background: url('../img/icons/sprite.svg#icon_#{$icon}') center center no-repeat;
+.socials__icon {
+  width: 100%;
+  height: 100%;
+  fill: $gray;
+
+  &:hover {
+    fill: #000;
   }
 }

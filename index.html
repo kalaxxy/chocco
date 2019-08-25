@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=1100, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
   <title>CHOCCO - натуральные шоколадные батончики</title>
@@ -13,8 +13,8 @@
   <div class="wrapper">
     <main class="main">
       <section class="section first">
-        <header class="header">
-          <div class="container container--flex--row">
+        <div class="container container--col">
+          <header class="header">
             <a href="#" class="logo">
               <div class="logo__text">CHO CCO</div>
             </a>
@@ -57,12 +57,15 @@
                 </li>
               </ul>
             </nav>
-            <div class="contacts">
-              <a href="tel:88009039090" class="contacts__tel">8 800 903 90 90</a>
+            <div class="header__tel">
+              <div class="contacts">
+                <a href="tel:88009039090" class="contacts__tel">8 800 903 90 90</a>
+              </div>
             </div>
-          </div>
-        </header>
-        <div class="container container--flex--row">
+            <a href="#" class="header__hamburger">
+              <div class="header__hamburger-elem"></div>
+            </a>
+          </header>
           <div class="first__content">
             <div class="first__col">
               <div class="first__desc">
@@ -72,37 +75,38 @@
               <div class="first__button">
                 <a href="#" class="button">Заказать</a>
               </div>
-              <div class="first__features">
-                <ul class="first__list">
-                  <li class="first__item">
-                      <svg class="first__icon">
-                        <use xlink:href="img/icons/sprite.svg#icon-leaf" ></use>
-                      </svg>
-                    <div class="first__feature">100% натуральный продукт</div>
-                  </li>
-                  <li class="first__item">
-                    <svg class="first__icon">
-                      <use xlink:href="img/icons/sprite.svg#icon-delivery" ></use>
-                    </svg>
-                    <div class="first__feature">3-5 дней доставка по РФ</div>
-                  </li>
-                  <li class="first__item">
-                    <svg class="first__icon">
-                      <use xlink:href="img/icons/sprite.svg#icon-metric" ></use>
-                    </svg>
-                    <div class="first__feature">Не портит фигуру</div>
-                  </li>
-                </ul>
-              </div>
             </div>
             <div class="first__col">
               <img src="img/chocco.png" alt="" class="first__chocco">
             </div>
           </div>
+          <div class="first__features">
+            <ul class="first__list">
+              <li class="first__item">
+                <svg class="first__icon">
+                  <use xlink:href="img/sprite.svg#icon-leaf"></use>
+                </svg>
+                <div class="first__feature">100% натуральный продукт</div>
+              </li>
+              <li class="first__item">
+                <svg class="first__icon">
+                  <use xlink:href="img/sprite.svg#icon-delivery"></use>
+                </svg>
+                <div class="first__feature">3-5 дней доставка по РФ</div>
+              </li>
+              <li class="first__item">
+                <svg class="first__icon">
+                  <use xlink:href="img/sprite.svg#icon-metric"></use>
+                </svg>
+                <div class="first__feature">Не портит фигуру</div>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </section>
       <section class="section why">
-        <div class="container container--flex">
+        <div class="container container--col">
           <h2 class="section-title section-title--why">Почему Chocco?</h2>
           <p class="why__desc">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно
             взять с собой.</p>
@@ -135,7 +139,7 @@
         </div>
       </section>
       <section class="section team">
-        <div class="container container--flex">
+        <div class="container container--col">
           <h2 class="section-title section-title--team">Команда</h2>
           <ul class="team__list">
             <li class="team__item">
@@ -162,11 +166,11 @@
                 </div>
               </div>
             </li>
-            <li class="team__item">
+            <li class="team__item team__item--active">
               <div class="team__photo">
                 <img src="img/team/kirill.jpg" alt="Кирилл Матросов" class="team__avatar">
               </div>
-              <div class="team__text team__text--active">
+              <div class="team__text">
                 <h3>Кирилл Матросов</h3>
                 <div class="team__desc">
                   <h4>Оператор</h4>
@@ -189,8 +193,49 @@
           </ul>
         </div>
       </section>
+      <section class="section taste">
+        <h2 class="section-title section-title--taste">Меню</h2>
+        <ul class="taste__list">
+          <li class="taste__item taste__item--active">
+            <button type="button" class="taste__btn taste__btn--milk">
+              <h3 class="taste__title">Батончики с молоком</h3>
+            </button>
+            <div class="taste__desc">
+              <div class="taste__text">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так
+                и вкуснее, и полезнее.
+                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно
+                питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет
+                спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+              </div>
+              <a href="#" class="taste__close"></a>
+            </div>
+          </li>
+          <li class="taste__item">
+            <button type="button" class="taste__btn taste__btn--honey">
+              <h3 class="taste__title">Батончики с молоком</h3>
+            </button>
+            <div class="taste__desc">
+              <div class="taste__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus facilis
+                at enim quos. Itaque unde aliquid ea nobis nihil accusamus corrupti temporibus recusandae alias, saepe
+                atque nam totam officiis.</div>
+              <a href="#" class="taste__close"></a>
+            </div>
+          </li>
+          <li class="taste__item">
+            <button type="button" class="taste__btn taste__btn--berries">
+              <h3 class="taste__title">Батончики с молоком</h3>
+            </button>
+            <div class="taste__desc">
+              <div class="taste__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus facilis
+                at enim quos. Itaque unde aliquid ea nobis nihil accusamus corrupti temporibus recusandae alias, saepe
+                atque nam totam officiis.</div>
+              <a href="#" class="taste__close"></a>
+            </div>
+          </li>
+        </ul>
+      </section>
       <section class="section reviews">
-        <div class="container container--flex">
+        <div class="container container--col">
           <h2 class="section-title section-title--reviews">Отзывы</h2>
           <div class="reviews__wrap">
             <div class="reviews__avatar">
@@ -226,43 +271,8 @@
           </ul>
         </div>
       </section>
-      <section class="section taste">
-            <h2 class="section-title section-title--taste">Меню</h2>
-            <ul class="taste__list">
-              <li class="taste__item taste__item--active">
-                <button type="button" class="taste__btn taste__btn--milk">
-                  <h3 class="taste__title">Батончики с молоком</h3>
-                </button>
-                <div class="taste__desc">
-                  <div class="taste__text">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
-                    Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
-                    </div>
-                </div>
-              </li>
-              <li class="taste__item">
-                <button type="button" class="taste__btn taste__btn--honey">
-                  <h3 class="taste__title">Батончики с молоком</h3>
-                </button>
-                <div class="taste__desc">
-                  <div class="taste__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus facilis
-                    at enim quos. Itaque unde aliquid ea nobis nihil accusamus corrupti temporibus recusandae alias, saepe
-                    atque nam totam officiis.</div>
-                </div>
-              </li>
-              <li class="taste__item">
-                <button type="button" class="taste__btn taste__btn--berries">
-                  <h3 class="taste__title">Батончики с молоком</h3>
-                </button>
-                <div class="taste__desc">
-                  <div class="taste__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus facilis
-                    at enim quos. Itaque unde aliquid ea nobis nihil accusamus corrupti temporibus recusandae alias, saepe
-                    atque nam totam officiis.</div>
-                </div>
-              </li>
-            </ul>
-        </section>
       <section class="section order">
-        <div class="container container--flex">
+        <div class="container container--col">
           <h2 class="section-title section-title--order">Закажите доставку</h2>
           <form action="get" class="form">
             <div class="form__col">
@@ -328,45 +338,63 @@
                 </label>
               </div>
               <div class="form__row">
-                <button type="submit" class="button button--form">Заказать</button>
-                <button type="reset" class="button__reset">Очистить</button>
+                <div class="form__btns">
+                  <button type="submit" class="button button--form">Заказать</button>
+                  <button type="reset" class="button button--reset">Очистить</button>
+                </div>
               </div>
             </div>
           </form>
         </div>
       </section>
       <section class="section map">
+        <footer class="footer">
+          <div class="container">
+            <address class="contacts">
+              <div class="contacts__adr">Москва, ул. Новый Арбат, д. 31/12</div>
+              <a href="tel:88009039090" class="contacts__tel--green">8 800 903 90 90</a>
+            </address>
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a href="#" class="socials__link socials__link--vk">
+                    <svg class="socials__icon">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link socials__link--fb">
+                    <svg class="socials__icon">
+                      <use xlink:href="img/sprite.svg#fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link socials__link--inst">
+                    <svg class="socials__icon">
+                      <use xlink:href="img/sprite.svg#inst"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link socials__link--tw">
+                    <svg class="socials__icon">
+                      <use xlink:href="img/sprite.svg#tw"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
 
       </section>
-      <footer class="footer">
-        <div class="container container--flex--row">
-          <address class="contacts">
-            <div class="contacts__adr">Москва, ул. Новый Арбат, д. 31/12</div>
-            <a href="tel:88009039090" class="contacts__tel--green">8 800 903 90 90</a>
-          </address>
-          <div class="socials">
-            <ul class="socials__list">
-              <li class="socials__item">
-                <a href="#" class="socials__link socials__link--vk"></a>
-              </li>
-              <li class="socials__item">
-                <a href="#" class="socials__link socials__link--fb"></a>
-              </li>
-              <li class="socials__item">
-                <a href="#" class="socials__link socials__link--inst"></a>
-              </li>
-              <li class="socials__item">
-                <a href="#" class="socials__link socials__link--tw"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
     </main>
   </div>
   <div class="pagination">
     <ul class="pagination__list">
-      <li class="pagination__item">
+      <li class="pagination__item pagination__item--active">
         <a href="#" class="pagination__link pagination__link--active"></a>
       </li>
       <li class="pagination__item">

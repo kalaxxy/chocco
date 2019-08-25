@@ -4,18 +4,18 @@
   &:before {
     content: '';
     position: absolute;
-    width: 150px;
-    height: 86px;
-    background-image: url('../img/berries_3.png');
+    width: 16%;
+    height: 13.23%;
+    background: url('../img/berries_3.png') center center / contain no-repeat;
     right: 0;
   }
 
   &:after {
     content: '';
     position: absolute;
-    width: 135px;
-    height: 193px;
-    background-image: url('../img/berries_4.png');
+    width: 14.36%;
+    height: 29.7%;
+    background-image: url('../img/berries_4.png') center center / contain no-repeat;
     left: 0;
   }
 }
@@ -27,26 +27,34 @@
   background-image: url('../img/leaf_3.png');
   background-position: right top;
   background-repeat: no-repeat;
-  padding: 50px;
-  margin-bottom: 27px;
+  padding: rem(50px);
+  margin-bottom: rem(16px);
 
   &:before {
     content: '';
     @include decoration;
-    width: 125px;
-    height: 75px;
+    width: rem(110px);
+    height: rem(70px);
     clip-path: ellipse(35% 35% at 50% 50%);
     background-color: #fff;
-    top: -12%;
+    top: -37px;
     z-index: $z_index_berries;
+  }
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
   }
 }
 
 .reviews__avatar {
-  width: 253px;
-  height: 259px;
+  max-width: rem(250px);
+  max-height: rem(250px);
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .reviews__img {
@@ -56,17 +64,28 @@
 }
 
 .reviews__desc {
-  margin-left: 20px;
+  margin-left: rem(20px);
   max-width: 50%;
 
+  @include tablets {
+    max-width: 80%;
+    margin-left: 0;
+  }
+
   & h3 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 500;
+    margin-bottom: rem(20px);
   }
 
   & p {
     color: $gray;
     line-height: 1.2;
+    margin-bottom: rem(25px);
+
+    @include tablets {
+      margin-bottom: 0;
+    }
   }
 
   & h4 {
@@ -81,12 +100,12 @@
 }
 
 .reviews__item {
-  width: 70px;
-  height: 70px;
+  width: rem(75px);
+  height: rem(75px);
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 10px;
-  border: 5px solid transparent;
+  margin-right: 3px;
+  border: 7px solid transparent;
 
   &:last-child {
     margin-right: 0;

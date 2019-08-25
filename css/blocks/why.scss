@@ -8,9 +8,9 @@
     content: '';
     position: absolute;
     left: 0;
-    width: 161px;
-    height: 315px;
-    background-image: url('../img/berries_2.png');
+    width: rem(161px);
+    height: rem(315px);
+    background: url('../img/berries_2.png') center center / contain no-repeat;
   }
 }
 
@@ -18,18 +18,36 @@
   color: $gray;
   max-width: 44%;
   line-height: 1.5rem;
-  margin: 0 auto 53px;
+  margin: 0 auto rem(53px);
+
+  @include tablets {
+    margin-bottom: rem(20px);
+  }
 }
 
 .why__list {
   display: flex;
   z-index: $z_index_content;
+
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .why__item {
   position: relative;
   flex: 1;
-  margin-right: 70px;
+  margin-right: rem(70px);
+
+  @include tablets {
+    margin-right: 0;
+    margin-bottom: rem(20px);
+    padding: 0 17%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   &:last-child {
     margin-right: 0;
@@ -38,11 +56,15 @@
   &:after {
     content: '';
     position: absolute;
-    width: 68px;
-    height: 22px;
+    width: rem(68px);
+    height: rem(22px);
     background-image: url('../img/separator.png');
     left: 100%;
     top: 20%;
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &:last-child {
@@ -55,12 +77,15 @@
 .why__icon {
   position: relative;
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: rem(126px);
+  height: rem(126px);
   border-radius: 50%;
   background-color: $lightgray;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 
+  @include tablets {
+    margin-bottom: 0;
+  }
 }
 
 @each $icon in (healthy, yammy, strength) {
@@ -71,7 +96,7 @@
     height: 70px;
     top: 50%;
     left: 50%;
-    background-image: url('../img/icons/sprite.svg##{$icon}');
+    background-image: url('../img/sprite.svg##{$icon}');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,8 +105,8 @@
 }
 
 .why__title {
-  font-size: 27px;
-  margin-bottom: 13px;
+  font-size: rem(27px);
+  margin-bottom: rem(13px);
 }
 
 .why__text {

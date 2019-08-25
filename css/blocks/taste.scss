@@ -22,6 +22,7 @@
   bottom: 0;
   height: 100%;
   z-index: $z_index_content;
+
 }
 
 .taste__item {
@@ -30,7 +31,7 @@
   &--active {
 
     .taste__desc {
-      max-width: 560px;
+      max-width: rem(530px);
     }
   }
 }
@@ -38,7 +39,8 @@
 .taste__title {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  font-size: 48px;
+  font-size: 3rem;
+  font-weight: 500;
   z-index: $z_index_content;
 }
 
@@ -53,7 +55,7 @@
   display: flex;
   justify-content: center;
   color: currentColor;
-  width: 100px;
+  max-width: rem(100px);
   height: 100%;
 
   &:after {
@@ -71,9 +73,31 @@
   background-color: rgba($darkgray, .9);
   max-width: 0;
   overflow: hidden;
-  font-size: 16px;
+  font-size: rem(16px);
+  position: relative;
 }
 
 .taste__text {
-  padding: 50px 124px 50px 30px;
+  padding: rem(50px) rem(124px) rem(50px) rem(30px);
+}
+
+.taste__close {
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(256, 256, 256, .7);
+  transform: rotate(45deg);
+  right: 22px;
+    top: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(256, 256, 256, .7);
+    transform: rotate(90deg);
+  }
 }

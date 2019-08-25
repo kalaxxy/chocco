@@ -18,6 +18,10 @@
   margin-bottom: 0;
 }
 
+.pagination__item--active .pagination__link {
+  border: 1px solid #fff;
+}
+
 .pagination__link {
   display: block;
   position: relative;
@@ -42,6 +46,6 @@
   left: 50%;
 }
 
-.pagination__link--active, .pagination__link:hover {
+.pagination__link:hover {
   border: 1px solid #fff;
 }

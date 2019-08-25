@@ -9,8 +9,8 @@
   &:after {
     content: '';
     @include decoration;
-    width: 1053px;
-    height: 350px;
+    width: rem(1053px);
+    height: rem(350px);
     background: url('../img/berries.png') no-repeat;
     bottom: -9%;
     z-index: $z-index-berries;
@@ -19,20 +19,43 @@
 
 .first__content {
   display: flex;
-  margin-bottom: 44px;
   z-index: $z-index-content;
+
+  @include tablets {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 5%;
+    padding: 0 20%;
+  }
+}
+
+.first__col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tablets {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .first__text {
   max-width: 70%;
-  font-size: 21px;
+  font-size: rem(21px);
   line-height: 1.7rem;
-  margin-bottom: 28px;
+  margin-bottom: rem(28px);
+
+  @include tablets {
+    max-width: 90%;
+  }
 }
 
 .first__list {
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.3rem;
 }
 
@@ -40,21 +63,34 @@
   display: flex;
   justify-content: space-between;
   flex: 1;
-  margin-right: 16px;
 
   &:last-child {
     margin-right: 0;
   }
 }
 
-.first__icon {
-  width: 83px;
-  height: 42px;
-  margin-right: 4px;
-  fill: #fff;
+.first__features {
+  z-index: $z-index-content;
+  align-self: flex-start;
+
+  @include tablets {
+    padding: 0 20%;
+  }
 }
 
+.first__icon {
+  width: rem(83px);
+  height: rem(42px);
+  margin-right: 4px;
+  stroke: #fff;
+  fill: transparent;
+}
 
 .first__chocco {
-  min-width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+
+  @include tablets {
+    max-width: 80%;
+  }
 }

@@ -1,4 +1,8 @@
 .footer {
   position: absolute;
   background-color: #fff;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }

@@ -5,6 +5,10 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .pagination__item {
@@ -12,6 +16,12 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--active {
+    .pagination__link {
+      border: 1px solid #fff;
+    }
   }
 }
 
@@ -36,7 +46,6 @@
     left: 50%;
   }
 
-  &--active,
   &:hover {
     border: 1px solid #fff;
   }
