@@ -35,6 +35,10 @@
   text-align: center;
   z-index: $z_index_content;
   flex-wrap: wrap;
+
+  @include tablets {
+    margin-bottom: 10%;
+  }
 }
 
 .team__item {
@@ -61,6 +65,11 @@
   height: rem(290px);
   overflow: hidden;
   margin-bottom: rem(15px);
+
+  @include phones {
+    width: rem(143px);
+    height: rem(186px);
+  }
 }
 
 .team__avatar {
@@ -71,6 +80,11 @@
 
 .team__text {
 
+  h3 {
+    @include tablets {
+      font-weight: 500;
+    }
+  }
   h3:after {
     content: '\25BC';
     display: inline-block;

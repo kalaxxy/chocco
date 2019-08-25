@@ -79,6 +79,14 @@
 
 .taste__text {
   padding: rem(50px) rem(124px) rem(50px) rem(30px);
+
+  @include tablets {
+    padding-right: rem(72px);
+  }
+
+  @include phones {
+    padding-right: rem(28px);
+  }
 }
 
 .taste__close {
