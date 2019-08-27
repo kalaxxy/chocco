@@ -86,31 +86,32 @@
 
 }
 
+.why__circle {
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  background-color: $lightgray;
+  margin: 0 auto rem(20px);
+  
+  @include tablets {
+    margin-bottom: 0;
+  }
+
+  @include phones {
+    min-width: 126px;
+  }
+}
+
 .why__icon {
   position: relative;
   width: 70px;
   height: 70px;
   fill: transparent;
   stroke: #000;
-  margin-bottom: rem(20px);
-
-  &:before {
-    content: '';
-    position: absolute;
-    width: 126px;
-    height: 126px;
-    border-radius: 50%;
-    background-color: $lightgray;
-  }
-
-  @include tablets {
-    margin-bottom: 0;
-  }
-
-  @include phones {
-    min-width: rem(70px);
-  }
-
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
 }
 
 .why__elem {
@@ -123,6 +124,10 @@
 .why__title {
   font-size: rem(27px);
   margin-bottom: rem(13px);
+
+  @include phones {
+    margin-bottom: 0;
+  }
 }
 
 .why__text {
