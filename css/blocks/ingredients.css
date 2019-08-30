@@ -1,0 +1,18 @@
+.ingredients {
+  position: absolute;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #efefef;
+  padding: rem(30px);
+}
+
+.ingredients__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ingredients__icon {
+  width: rem(35px);
+  height: rem(35px);
+}

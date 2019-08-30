@@ -1,0 +1,44 @@
+.ingredients {
+  position: absolute;
+}
+
+.ingredients__btn {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  background-color: $blue;
+}
+
+.ingredients__btn-icon {
+  width: 51px;
+  height: 51px;
+  fill: #fff;
+}
+
+.ingredients__btn-title {
+  font-size: rem(14px);
+  color: #fff;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.ingredients__elem {
+  position: absolute;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #efefef;
+  padding: rem(30px);
+  z-index: $z_index_pagination;
+}
+
+.ingredients__item {
+  display: flex;
+}
+
+.ingredients__icon {
+  width: rem(35px);
+  height: rem(35px);
+}
+

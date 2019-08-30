@@ -1,0 +1,33 @@
+.hamburger-menu {
+  display: none;
+
+  @include tablets {
+    /*display: flex;*/
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: $z_index_pagination;
+    width: 100vw;
+    height: 100vh;
+    background-color: $darkgray;
+    font-size: rem(36px);
+    line-height: rem(72px);
+    color: #ffffff;
+    text-align: center;
+  }
+
+  @include phones {
+    align-items: center;
+  }
+}
+
+.hamburger-menu__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: rem(140px);
+
+  @include phones {
+    margin-top: 0;
+  }
+}
