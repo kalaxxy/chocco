@@ -58,6 +58,7 @@
 
   @include tablets {
     max-width: 90%;
+    margin: rem(20px) auto rem(28px);
   }
 
   @include phones {

@@ -94,7 +94,7 @@
   width: 24px;
   height: 4px;
   border-radius: 2px;
-  background-color: rgba(256, 256, 256, .7);
+  background-color: $lightgray;
   transform: rotate(45deg);
   right: 22px;
     top: 30px;
@@ -105,7 +105,7 @@
     width: 24px;
     height: 4px;
     border-radius: 2px;
-    background-color: rgba(256, 256, 256, .7);
+    background-color: $lightgray;
     transform: rotate(90deg);
   }
 }

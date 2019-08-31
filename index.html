@@ -21,27 +21,27 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">
+                  <a href="#about" class="menu__link">
                     О нас
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">
+                  <a href="#bars" class="menu__link">
                     Батончики
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">
+                  <a href="#team" class="menu__link">
                     Команда
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">
+                  <a href="#menu" class="menu__link">
                     Меню
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">
+                  <a href="#reviews" class="menu__link">
                     Отзывы
                   </a>
                 </li>
@@ -51,7 +51,7 @@
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">
+                  <a href="#contacts" class="menu__link">
                     Контакты
                   </a>
                 </li>
@@ -105,7 +105,7 @@
 
         </div>
       </section>
-      <section class="section why">
+      <section class="section why" id="about">
         <div class="container container--col">
           <h2 class="section-title section-title--why">Почему Chocco?</h2>
           <p class="why__desc">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно
@@ -150,7 +150,7 @@
           </ul>
         </div>
       </section>
-      <section class="section slider">
+      <section class="section slider" id="bars">
         <div class="container">
           <a href="#" class="slider__arrow ">
             <div class="slider__prev"></div>
@@ -160,7 +160,7 @@
               <li class="slider__item">
                 <div class="slide">
                   <div class="slide__col">
-                    <img src="img/chocco2.png" alt="Батончик Морские водоросли" class="slider__img">
+                    <img src="img/chocco2.png" alt="Батончик Морские водоросли" class="slide__img">
                   </div>
                   <div class="slide__col">
                     <h3 class="slide__title">Батончик "Морские водоросли"</h3>
@@ -177,7 +177,7 @@
                       </li>
                     </ul>
                     <div class="slide__cta">
-                      <div class="slide__price">140 &#8381;</div>
+                      <div class="slide__price">140Р</div>
                       <div class="slide__btn">
                         <a href="#" class="button button--green">Заказать</a>
                       </div>
@@ -190,7 +190,6 @@
                       <use xlink:href='img/sprite.svg#ingredients-icon'></use>
                     </svg>
                     <div class="ingredients__btn-title">Состав</div>
-                  </button>
                   <div class="ingredients__elem">
                     <ul class="ingredients__list">
                       <li class="ingredients__item">
@@ -251,11 +250,14 @@
                         <svg class="ingredients__icon">
                           <use xlink:href='img/sprite.svg#beans'></use>
                         </svg>
-                        <div class="ingredients__name">Какао бобы</div>
-                        <div class="ingredients__weight">4г</div>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Какао бобы</div>
+                          <div class="ingredients__weight">4г</div>
+                        </div>
                       </li>
                     </ul>
                   </div>
+                </button>
                 </div>
               </li>
             </ul>
@@ -265,7 +267,7 @@
           </a>
         </div>
       </section>
-      <section class="section team">
+      <section class="section team" id="team">
         <div class="container container--col">
           <h2 class="section-title section-title--team">Команда</h2>
           <ul class="team__list">
@@ -320,7 +322,7 @@
           </ul>
         </div>
       </section>
-      <section class="section taste">
+      <section class="section taste" id="menu">
         <h2 class="section-title section-title--taste">Меню</h2>
         <ul class="taste__list">
           <li class="taste__item taste__item--active">
@@ -361,7 +363,7 @@
           </li>
         </ul>
       </section>
-      <section class="section reviews">
+      <section class="section reviews" id="reviews">
         <div class="container container--col">
           <h2 class="section-title section-title--reviews">Отзывы</h2>
           <div class="reviews__wrap">
@@ -398,7 +400,7 @@
           </ul>
         </div>
       </section>
-      <section class="section order">
+      <section class="section order" id="order">
         <div class="container container--col">
           <h2 class="section-title section-title--order">Закажите доставку</h2>
           <form action="get" class="form">
@@ -474,7 +476,7 @@
           </form>
         </div>
       </section>
-      <section class="section map">
+      <section class="section map" id="contacts">
         <footer class="footer">
           <div class="container">
             <address class="contacts">
@@ -554,31 +556,60 @@
     <div class="hamburger__elem"></div>
   </a>
   <div class="hamburger-menu">
+    <a href="#" class="hamburger-menu__close"></a>
     <ul class="hamburger-menu__list">
       <li class="hamburger-menu__item">
-        <a href="#" class="hamburger-menu__link">О нас</a>
+        <a href="#about" class="hamburger-menu__link">О нас</a>
       </li>
       <li class="hamburger-menu__item">
-        <a href="#" class="hamburger-menu__link">Батончики</a>
+        <a href="#bars" class="hamburger-menu__link">Батончики</a>
       </li>
       <li class="hamburger-menu__item">
-        <a href="#" class="hamburger-menu__link">Команда</a>
+        <a href="#team" class="hamburger-menu__link">Команда</a>
       </li>
       <li class="hamburger-menu__item">
-        <a href="#" class="hamburger-menu__link">Меню</a>
+        <a href="#menu" class="hamburger-menu__link">Меню</a>
       </li>
       <li class="hamburger-menu__item">
-        <a href="#" class="hamburger-menu__link">Отзывы</a>
+        <a href="#reviews" class="hamburger-menu__link">Отзывы</a>
       </li>
       <li class="hamburger-menu__item">
         <a href="#" class="hamburger-menu__link">Как мы работаем</a>
       </li>
       <li class="hamburger-menu__item">
-        <a href="#" class="hamburger-menu__link">Контакты</a>
+        <a href="#contacts" class="hamburger-menu__link">Контакты</a>
       </li>
     </ul>
   </div>
 
+  <script type="text/javascript">
+    let hamburger = document.querySelector('.hamburger');
+    let hamburgerMenu = document.querySelector('.hamburger-menu');
+    let close = document.querySelector('.hamburger-menu__close');
+    let body = document.querySelector('body');
+    
+    let links = document.querySelectorAll('.hamburger-menu__link');
+
+    function toggleMenu() {
+      hamburger.classList.toggle('hamburger--active');
+      hamburgerMenu.classList.toggle('hamburger-menu--active');
+      close.classList.toggle('hamburger-menu__close--active');
+      body.classList.toggle('body--active-menu');
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+    hamburger.addEventListener('click', function(e) {
+      e.preventDefault();
+    });
+    close.addEventListener('click', toggleMenu);
+    close.addEventListener('click', function(e) {
+      e.preventDefault();
+    });
+
+    links.forEach(function(element) {
+      element.addEventListener('click', toggleMenu);
+    })
+  </script>
 </body>
 
 </html>
