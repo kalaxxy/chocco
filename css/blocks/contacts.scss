@@ -1,6 +1,10 @@
 .contacts {
   font-size: 1.5rem;
   font-style: normal;
+
+  @include menu-hide {
+    margin-right: 70px;
+  }
 }
 
 .contacts__tel {

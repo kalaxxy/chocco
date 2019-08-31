@@ -683,6 +683,12 @@ textarea {
   font-style: normal;
 }
 
+@media screen and (max-width: 880px) {
+  .contacts {
+    margin-right: 70px;
+  }
+}
+
 .contacts__tel {
   position: relative;
 }
@@ -2121,14 +2127,14 @@ textarea {
   opacity: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
   .hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: fixed;
     right: 0;
-    top: 0;
+    top: 1%;
     opacity: 1;
     margin-top: 35px;
     margin-right: 30px;
@@ -2205,11 +2211,9 @@ textarea {
   background-color: #f2f5f4;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  right: 0;
-  top: 0;
+  right: 35px;
+  top: 45px;
   opacity: 1;
-  margin-top: 35px;
-  margin-right: 30px;
 }
 
 .hamburger-menu__close:before {

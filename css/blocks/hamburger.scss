@@ -5,11 +5,11 @@
     opacity: 0;
   }
 
-  @include tablets {
+  @include menu-hide {
     display: flex;
     position: fixed;
     right: 0;
-    top: 0;
+    top: 1%;
     opacity: 1;
     margin-top: 35px;
     margin-right: 30px;

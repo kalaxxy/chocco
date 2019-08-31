@@ -597,13 +597,14 @@
       body.classList.toggle('body--active-menu');
     }
 
-    hamburger.addEventListener('click', toggleMenu);
     hamburger.addEventListener('click', function(e) {
       e.preventDefault();
+      toggleMenu();
     });
-    close.addEventListener('click', toggleMenu);
+
     close.addEventListener('click', function(e) {
       e.preventDefault();
+      toggleMenu();
     });
 
     links.forEach(function(element) {
