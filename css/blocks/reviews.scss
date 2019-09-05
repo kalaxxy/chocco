@@ -20,9 +20,8 @@
   }
 }
 
-.reviews__wrap {
+.reviews__container {
   position: relative;
-  display: flex;
   background-color: $pearl;
   background-image: url('../img/leaf_3.png');
   background-position: right top;
@@ -39,6 +38,23 @@
     background-color: #fff;
     top: -37px;
     z-index: $z_index_berries;
+  }
+
+  @include tablets {
+    width: 80%;
+  }
+}
+
+.reviews__wrap {
+  display: flex;
+  justify-content: center;
+}
+  
+.reviews__content {
+  display: none;
+
+  &--active {
+    display: flex;
   }
 
   @include tablets {

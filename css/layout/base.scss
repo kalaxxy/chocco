@@ -22,10 +22,10 @@ html {
 body {
   font: 18px/1.7 'Alegreya Sans', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
+}
 
-  &--active-menu {
-    overflow: hidden;
-  }
+.body--active-menu {
+  overflow: hidden;
 }
 
 .wrapper {

@@ -484,7 +484,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-body--active-menu {
+.body--active-menu {
   overflow: hidden;
 }
 
@@ -1579,9 +1579,7 @@ textarea {
 }
 
 .team__item--active .team__desc {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
 }
 
 .team__item--active h3:after {
@@ -1741,11 +1739,8 @@ textarea {
   left: 0;
 }
 
-.reviews__wrap {
+.reviews__container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #f8faf9;
   background-image: url("../img/leaf_3.png");
   background-position: right top;
@@ -1754,7 +1749,7 @@ textarea {
   margin-bottom: 1rem;
 }
 
-.reviews__wrap:before {
+.reviews__container:before {
   content: '';
   position: absolute;
   left: 50%;
@@ -1770,7 +1765,29 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-  .reviews__wrap {
+  .reviews__container {
+    width: 80%;
+  }
+}
+
+.reviews__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__content {
+  display: none;
+}
+
+.reviews__content--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1784,7 +1801,7 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
-  .reviews__wrap {
+  .reviews__content {
     padding: 2.5rem 0;
     width: 100%;
   }
