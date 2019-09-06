@@ -1,7 +1,7 @@
 function accordionTaste() {
   const tasteItem = document.querySelectorAll('.taste__item');
   const tasteList = document.querySelector('.taste__list');
-  const close = document.querySelectorAll('.taste__close');
+  const closeAcco = document.querySelector('.taste__close');
 
   tasteList.addEventListener('click', function(e) {
     let button = e.target.parentNode;
@@ -21,6 +21,11 @@ function accordionTaste() {
         
     if (button.classList.contains('taste__btn')) {
       slideAcco();
+    }
+
+    if (e.target.classList.contains('taste__close')) {
+      e.preventDefault();
+      item.classList.remove('taste__item--active');
     }
 
     function slideAcco() {
@@ -47,8 +52,15 @@ function accordionTaste() {
           description.style.width = windowWidth - buttonWidth + 'px';
         }
       }
+
+      
     }
   })
+
+  //closeAcco.addEventListener('click', function(e) {
+    //e.preventDefault();
+    //tasteItem.classList.remove('taste__item--active');
+  //})
 }
 
 accordionTaste();

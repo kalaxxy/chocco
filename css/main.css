@@ -1199,12 +1199,17 @@ textarea {
 
 .slider__wrap {
   width: 100%;
+  overflow: hidden;
 }
 
 .slider__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  will-change: right;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 .slider__item {
@@ -1212,6 +1217,7 @@ textarea {
       -ms-flex: 1;
           flex: 1;
   position: relative;
+  min-width: 100%;
 }
 
 .slide {
@@ -1456,7 +1462,7 @@ textarea {
   background-color: #00accf;
 }
 
-.ingredients__btn:hover .ingredients__elem {
+.ingredients__btn:hover + .ingredients__elem {
   opacity: 1;
   right: 100%;
 }
@@ -1576,6 +1582,8 @@ textarea {
 .team__desc {
   height: 0;
   overflow: hidden;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .team__item--active .team__desc {
@@ -1676,6 +1684,8 @@ textarea {
   overflow: hidden;
   font-size: 1rem;
   position: relative;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .taste__text {
@@ -1767,6 +1777,19 @@ textarea {
 @media screen and (max-width: 768px) {
   .reviews__container {
     width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reviews__container {
+    width: 100%;
+    padding: 2.8125rem 0;
   }
 }
 
@@ -1774,10 +1797,23 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews__wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .reviews__content {
   display: none;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .reviews__content--active {
@@ -1835,7 +1871,7 @@ textarea {
 
 .reviews__desc {
   margin-left: 1.25rem;
-  max-width: 50%;
+  max-width: 55%;
 }
 
 @media screen and (max-width: 768px) {
@@ -1884,6 +1920,8 @@ textarea {
   overflow: hidden;
   margin-right: 3px;
   border: 7px solid transparent;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .reviews__item:last-child {

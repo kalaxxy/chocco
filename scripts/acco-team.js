@@ -4,7 +4,7 @@ const teamAcco = document.querySelector('.team__list');
 function accordionTeam() {
   teamAcco.addEventListener('click', function(e) {
     e.preventDefault();
-     const link = e.target;
+     const link = e.target.parentNode;
 
      if (link.classList.contains('team__link')) {
        const teamItem = link.parentNode.parentNode;
@@ -13,6 +13,7 @@ function accordionTeam() {
          if (iterator != teamItem) {
            iterator.classList.remove('team__item--active');
          }
+         console.log(iterator)
        }
 
        if (teamItem.classList.contains('team__item--active')) {

@@ -81,7 +81,7 @@
 
 .ingredients__btn:hover {
   background-color: #00accf;
-  .ingredients__elem {
+  & + .ingredients__elem {
     opacity: 1;
     right: 100%;
   }

@@ -152,7 +152,7 @@
       </section>
       <section class="section slider" id="bars">
         <div class="container">
-          <a href="#" class="slider__arrow ">
+          <a href="#" class="slider__arrow" id="prev">
             <div class="slider__prev"></div>
           </a>
           <div class="slider__wrap">
@@ -190,79 +190,173 @@
                       <use xlink:href='img/sprite.svg#ingredients-icon'></use>
                     </svg>
                     <div class="ingredients__btn-title">Состав</div>
-                    <div class="ingredients__elem">
-                      <ul class="ingredients__list">
-                        <li class="ingredients__item">
-                          <svg class="ingredients__icon">
-                            <use xlink:href='img/sprite.svg#oat'></use>
-                          </svg>
-                          <div class="ingredients__text">
-                            <div class="ingredients__name">Овёс</div>
-                            <div class="ingredients__weight">25г</div>
-                          </div>
-                        </li>
-                        <li class="ingredients__item">
-                          <svg class="ingredients__icon">
-                            <use xlink:href='img/sprite.svg#seaweed'></use>
-                          </svg>
-                          <div class="ingredients__text">
-                            <div class="ingredients__name">Мор. водоросли</div>
-                            <div class="ingredients__weight">15г</div>
-                          </div>
-                        </li>
-                        <li class="ingredients__item">
-                          <svg class="ingredients__icon">
-                            <use xlink:href='img/sprite.svg#almond'></use>
-                          </svg>
-                          <div class="ingredients__text">
-                            <div class="ingredients__name">Миндаль</div>
-                            <div class="ingredients__weight">20г</div>
-                          </div>
-                        </li>
-                        <li class="ingredients__item">
-                          <svg class="ingredients__icon">
-                            <use xlink:href='img/sprite.svg#milk'></use>
-                          </svg>
-                          <div class="ingredients__text">
-                            <div class="ingredients__name">Сухое молоко</div>
-                            <div class="ingredients__weight">10г</div>
-                          </div>
-                        </li>
-                        <li class="ingredients__item">
-                          <svg class="ingredients__icon">
-                            <use xlink:href='img/sprite.svg#seeds'></use>
-                          </svg>
-                          <div class="ingredients__text">
-                            <div class="ingredients__name">Тыкв. семечки</div>
-                            <div class="ingredients__weight">20г</div>
-                          </div>
-                        </li>
-                        <li class="ingredients__item">
-                          <svg class="ingredients__icon">
-                            <use xlink:href='img/sprite.svg#honey'></use>
-                          </svg>
-                          <div class="ingredients__text">
-                            <div class="ingredients__name">Зам. сахара</div>
-                            <div class="ingredients__weight">4г</div>
-                          </div>
-                        </li>
-                        <li class="ingredients__item">
-                          <svg class="ingredients__icon">
-                            <use xlink:href='img/sprite.svg#beans'></use>
-                          </svg>
-                          <div class="ingredients__text">
-                            <div class="ingredients__name">Какао бобы</div>
-                            <div class="ingredients__weight">4г</div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
                   </button>
+                  <div class="ingredients__elem">
+                    <ul class="ingredients__list">
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#oat'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Овёс</div>
+                          <div class="ingredients__weight">25г</div>
+                        </div>
+                      </li>
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#seaweed'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Мор. водоросли</div>
+                          <div class="ingredients__weight">15г</div>
+                        </div>
+                      </li>
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#almond'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Миндаль</div>
+                          <div class="ingredients__weight">20г</div>
+                        </div>
+                      </li>
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#milk'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Сухое молоко</div>
+                          <div class="ingredients__weight">10г</div>
+                        </div>
+                      </li>
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#seeds'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Тыкв. семечки</div>
+                          <div class="ingredients__weight">20г</div>
+                        </div>
+                      </li>
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#honey'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Зам. сахара</div>
+                          <div class="ingredients__weight">4г</div>
+                        </div>
+                      </li>
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#beans'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Какао бобы</div>
+                          <div class="ingredients__weight">4г</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__item">
+                <div class="slide">
+                  <div class="slide__col">
+                    <img src="img/chocco3.png" alt="Батончик Гранола виноград" class="slide__img">
+                  </div>
+                  <div class="slide__col">
+                    <h3 class="slide__title">Батончик "Гранола виноград"</h3>
+                    <div class="slide__desc">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также
+                      входят: сухое молоко, заменитель сахара и какао бобы.</div>
+                    <ul class="slide__list">
+                      <li class="slide__item">
+                        <div class="slide__value">Калорийность</div>
+                        <span class="slide__num">110 ккал</span>
+                      </li>
+                      <li class="slide__item">
+                        <div class="slide__value">Вес</div>
+                        <span class="slide__num">95 грамм</span>
+                      </li>
+                    </ul>
+                    <div class="slide__cta">
+                      <div class="slide__price">140Р</div>
+                      <div class="slide__btn">
+                        <a href="#" class="button button--green">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ingredients">
+                  <button class="ingredients__btn">
+                    <svg class="ingredients__btn-icon">
+                      <use xlink:href='img/sprite.svg#ingredients-icon'></use>
+                    </svg>
+                    <div class="ingredients__btn-title">Состав</div>
+                  </button>
+                  <div class="ingredients__elem">
+                    <ul class="ingredients__list">
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#grape'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Виноград</div>
+                          <div class="ingredients__weight">25г</div>
+                        </div>
+                      </li>
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#nut'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Грецкий орех</div>
+                          <div class="ingredients__weight">32г</div>
+                        </div>
+                      </li>
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#almond'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Кунжутное семя</div>
+                          <div class="ingredients__weight">20г</div>
+                        </div>
+                      </li>
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#milk'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Сухое молоко</div>
+                          <div class="ingredients__weight">10г</div>
+                        </div>
+                      </li>
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#honey'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Зам. сахара</div>
+                          <div class="ingredients__weight">4г</div>
+                        </div>
+                      </li>
+                      <li class="ingredients__item">
+                        <svg class="ingredients__icon">
+                          <use xlink:href='img/sprite.svg#beans'></use>
+                        </svg>
+                        <div class="ingredients__text">
+                          <div class="ingredients__name">Какао бобы</div>
+                          <div class="ingredients__weight">4г</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </li>
             </ul>
           </div>
-          <a href="#" class="slider__arrow">
+          <a href="#" class="slider__arrow" id="next">
             <div class="slider__next"></div>
           </a>
         </div>
@@ -380,7 +474,7 @@
           <h2 class="section-title section-title--reviews">Отзывы</h2>
           <div class="reviews__container">
             <ul class="reviews__wrap">
-              <li class="reviews__content reviews__content--active">
+              <li class="reviews__content reviews__content--active" id="reviews-01">
                 <div class="reviews__avatar">
                   <img src="img/users/alena.jpg" alt="Отзыв - Алена Хмельницкая" class="reviews__img">
                 </div>
@@ -388,59 +482,57 @@
                   <h3>Лучший перекус</h3>
                   <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение
                     дня сижу за компьютером
-                    и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой.
+                    и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под
+                    рукой.
                     Это приятно
                     и удобно.
                   </p>
                   <h4>Алёна Хмельницкая</h4>
                 </div>
               </li>
-              <li class="reviews__content">
+              <li class="reviews__content" id="reviews-02">
                 <div class="reviews__avatar">
-                  <img src="img/users/alena.jpg" alt="Отзыв - Алена Хмельницкая" class="reviews__img">
+                  <img src="img/users/maria.jpg" alt="Отзыв - Мария Орлова" class="reviews__img">
                 </div>
                 <div class="reviews__desc">
-                  <h3>Лучший перекус</h3>
-                  <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение
-                    дня сижу за компьютером
-                    и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой.
-                    Это приятно
-                    и удобно.
+                  <h3>Лучшие батончики премиум уровня</h3>
+                  <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как
+                    говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же,
+                    кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс,
+                    чем минус.
                   </p>
-                  <h4>Алёна Хмельницкая</h4>
+                  <h4>Мария Орлова</h4>
                 </div>
               </li>
-              <li class="reviews__content">
+              <li class="reviews__content" id="reviews-03">
                 <div class="reviews__avatar">
-                  <img src="img/users/alena.jpg" alt="Отзыв - Алена Хмельницкая" class="reviews__img">
+                  <img src="img/users/vadim.jpg" alt="Отзыв - Вадим Грачев" class="reviews__img">
                 </div>
                 <div class="reviews__desc">
-                  <h3>Лучший перекус</h3>
-                  <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение
-                    дня сижу за компьютером
-                    и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой.
-                    Это приятно
-                    и удобно.
+                  <h3>Идеально подходят для спортсменов</h3>
+                  <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно
+                    доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю
+                    за этот качественный и экологичный продукт.
                   </p>
-                  <h4>Алёна Хмельницкая</h4>
+                  <h4>Вадим Грачев</h4>
                 </div>
               </li>
             </ul>
           </div>
           <ul class="reviews__list">
-            <li class="reviews__item reviews__item--active">
+            <li class="reviews__item reviews__item--active" id="reviews-01">
               <a href="#" class="reviews__link">
                 <img src="img/users/alena.jpg" alt="Превью отзыва - Алена Хмельницкая" class="reviews__preview">
               </a>
             </li>
-            <li class="reviews__item">
+            <li class="reviews__item" id="reviews-02">
               <a href="#" class="reviews__link">
-                <img src="img/users/user2.jpg" alt="Превью отзыва - User2" class="reviews__preview">
+                <img src="img/users/maria.jpg" alt="Превью отзыва - Мария Орлова" class="reviews__preview">
               </a>
             </li>
-            <li class="reviews__item">
+            <li class="reviews__item" id="reviews-03">
               <a href="#" class="reviews__link">
-                <img src="img/users/user3.jpg" alt="Превью отзыва - User3" class="reviews__preview">
+                <img src="img/users/vadim.jpg" alt="Превью отзыва - Вадим Грачев" class="reviews__preview">
               </a>
             </li>
           </ul>
@@ -629,8 +721,10 @@
   </div>
 
   <script src="scripts/hamburger-menu.js"></script>
+  <script src="scripts/slider-bars.js"></script>
   <script src="scripts/acco-team.js"></script>
   <script src="scripts/acco-taste.js"></script>
+  <script src="scripts/slider-review.js"></script>
 </body>
 
 </html>

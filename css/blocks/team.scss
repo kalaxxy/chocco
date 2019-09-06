@@ -100,6 +100,7 @@
 .team__desc {
   height: 0;
   overflow: hidden;
+  transition: .4s;
 }
 
 .team__item--active {

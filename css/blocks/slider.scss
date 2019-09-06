@@ -29,13 +29,18 @@
 
 .slider__wrap {
   width: 100%;
+  overflow: hidden;
 }
 
 .slider__list {
   display: flex;
+  position: relative;
+  will-change: right;
+  transition: .6s;
 }
 
 .slider__item {
   flex: 1;
   position: relative;
+  min-width: 100%;
 }

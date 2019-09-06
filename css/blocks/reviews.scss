@@ -42,16 +42,28 @@
 
   @include tablets {
     width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include phones {
+    width: 100%;
+    padding: rem(45px) 0;
   }
 }
 
 .reviews__wrap {
   display: flex;
   justify-content: center;
+
+  @include tablets {
+    justify-content: center;
+  }
 }
   
 .reviews__content {
   display: none;
+  transition: .4s;
 
   &--active {
     display: flex;
@@ -91,7 +103,7 @@
 
 .reviews__desc {
   margin-left: rem(20px);
-  max-width: 50%;
+  max-width: 55%;
 
   @include tablets {
     max-width: 80%;
@@ -132,6 +144,7 @@
   overflow: hidden;
   margin-right: 3px;
   border: 7px solid transparent;
+  transition: .4s;
 
   &:last-child {
     margin-right: 0;
