@@ -30,6 +30,9 @@
 .slider__wrap {
   width: 100%;
   overflow: hidden;
+  height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .slider__list {

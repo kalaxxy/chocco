@@ -38,6 +38,11 @@
 
   @include tablets {
     margin-bottom: 10%;
+    padding: 0 18%;
+  }
+
+  @include phones {
+    padding: 0;
   }
 }
 
@@ -52,6 +57,7 @@
 
   @include tablets {
     min-width: 47%;
+    overflow: hidden;
 
     &:nth-child(2) {
       margin-right: 0;

@@ -1,6 +1,5 @@
 .slide {
   display: flex;
-  overflow: hidden;
 
   @include tablets {
     flex-direction: column;

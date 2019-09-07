@@ -1,12 +1,16 @@
 function accordionTaste() {
   const tasteItem = document.querySelectorAll('.taste__item');
   const tasteList = document.querySelector('.taste__list');
-  const closeAcco = document.querySelector('.taste__close');
 
   tasteList.addEventListener('click', function(e) {
     let button = e.target.parentNode;
     let description = button.nextElementSibling;
     let item = button.parentNode;
+
+    let close = item.querySelector('.taste__close').addEventListener('click', e=> {
+      e.preventDefault();
+      closeAcco();
+    })
 
     const buttonWidth = button.clientWidth;
     const windowWidth = document.documentElement.clientWidth;
@@ -23,6 +27,11 @@ function accordionTaste() {
       slideAcco();
     }
 
+    function closeAcco() {
+      let item = document.querySelector('.taste__item.taste__item--active');
+      item.classList.remove('taste__item--active');
+    }
+    
     if (e.target.classList.contains('taste__close')) {
       e.preventDefault();
       item.classList.remove('taste__item--active');

@@ -541,40 +541,42 @@
       <section class="section order" id="order">
         <div class="container container--col">
           <h2 class="section-title section-title--order">Закажите доставку</h2>
-          <form action="get" class="form">
+          <form class="form">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__elem">
                   <span class="form__title">Имя</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="name" required>
+                  <div class="form__error"></div>
                 </label>
                 <label class="form__elem">
                   <span class="form__title">Телефон</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="phone" required>
+                  <div class="form__error"></div>
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__elem">
                   <span class="form__title">Улица</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="str">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__elem">
                   <span class="form__title">Дом</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="house">
                 </label>
                 <label class="form__elem">
                   <span class="form__title">Корпус</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="house-num">
                 </label>
                 <label class="form__elem">
                   <span class="form__title">Квартира</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="apt">
                 </label>
                 <label class="form__elem">
                   <span class="form__title">Этаж</span>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="floor">
                 </label>
               </div>
             </div>
@@ -582,7 +584,8 @@
               <div class="form__row">
                 <label class="form__elem">
                   <span class="form__title">Комментарий</span>
-                  <textarea type="textarea" class="form__input form__input--textarea"></textarea>
+                  <textarea type="textarea" class="form__input form__input--textarea" name="comment" required></textarea>
+                  <div class="form__error"></div>
                 </label>
               </div>
               <div class="form__row">
@@ -606,7 +609,7 @@
               </div>
               <div class="form__row">
                 <div class="form__btns">
-                  <button type="submit" class="button button--green">Заказать</button>
+                  <button type="submit" class="button button--green send">Заказать</button>
                   <button type="reset" class="button button--reset">Очистить</button>
                 </div>
               </div>
@@ -725,6 +728,7 @@
   <script src="scripts/acco-team.js"></script>
   <script src="scripts/acco-taste.js"></script>
   <script src="scripts/slider-review.js"></script>
+  <script src="scripts/form.js"></script>
 </body>
 
 </html>

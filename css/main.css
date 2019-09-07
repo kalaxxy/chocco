@@ -1200,6 +1200,13 @@ textarea {
 .slider__wrap {
   width: 100%;
   overflow: hidden;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slider__list {
@@ -1224,7 +1231,6 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -1516,6 +1522,13 @@ textarea {
 @media screen and (max-width: 768px) {
   .team__list {
     margin-bottom: 10%;
+    padding: 0 18%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team__list {
+    padding: 0;
   }
 }
 
@@ -1534,6 +1547,7 @@ textarea {
 @media screen and (max-width: 768px) {
   .team__item {
     min-width: 47%;
+    overflow: hidden;
   }
   .team__item:nth-child(2) {
     margin-right: 0;
