@@ -38,6 +38,7 @@
 .slider__list {
   display: flex;
   position: relative;
+  // width: 100%;
   will-change: right;
   transition: .6s;
 }
