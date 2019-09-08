@@ -1214,6 +1214,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  width: 100%;
   will-change: right;
   -webkit-transition: .6s;
   transition: .6s;
@@ -1374,7 +1375,7 @@ textarea {
 
 @media screen and (max-width: 768px) {
   .ingredients {
-    right: 0;
+    right: 1px;
     top: 0;
     left: initial;
     bottom: initial;
