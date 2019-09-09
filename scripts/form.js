@@ -35,6 +35,40 @@ sendOrder.addEventListener('click', function(e) {
   }
 });
 
+function createOverlay(modal) {
+  let element = document.createElement('div');
+
+  element.innerHTML = modal;
+
+  const overlayModal = element.querySelector(".modal");
+  const closeModal = element.querySelector(".modal__close");
+  const messageModal = element.querySelector(".modal__message");
+
+  element = null;
+
+  overlayModal.addEventListener("click", e => {
+    if (e.target === overlayModal) {
+      closeModal.click();
+    }
+  });
+
+  closeModal.addEventListener("click", () => {
+    document.body.removeChild(overlayModal);
+  });
+
+  return {
+    open() {
+      document.body.appendChild(overlayModal);
+    },
+    close() {
+      closeModal.click();
+    },
+    setMessage(msg) {
+      messageModal.innerText = msg;
+    }
+  };
+}
+
 function validateForm(form) {
   let valid = true;
 

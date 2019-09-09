@@ -30,6 +30,7 @@ function accordionTaste() {
     function closeAcco() {
       let item = document.querySelector('.taste__item.taste__item--active');
       item.classList.remove('taste__item--active');
+      tasteList.style.transform = 'translateX(0)';
     }
     
     if (e.target.classList.contains('taste__close')) {
