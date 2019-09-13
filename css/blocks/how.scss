@@ -1,0 +1,15 @@
+.how {
+  background-color: $pearl;
+  position: relative;
+
+  &:after {
+    content: '';
+    @include decoration;
+    width: rem(1067px);
+    height: rem(661px);
+    background: url('../img/berries_6.png') no-repeat;
+    bottom: -16%;
+    right: 0;
+    z-index: $z-index-berries;
+  }
+}

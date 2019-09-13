@@ -12,7 +12,7 @@
 <body>
   <div class="wrapper">
     <main class="main">
-      <section class="section first">
+      <section class="section first active">
         <div class="container">
           <header class="header">
             <a href="#" class="logo">
@@ -538,6 +538,11 @@
           </ul>
         </div>
       </section>
+      <section class="section how">
+        <div class="container container--col">
+          <h2 class="section-title">Как мы работаем</h2>
+        </div>
+      </section>
       <section class="section order" id="order">
         <div class="container container--col">
           <h2 class="section-title section-title--order">Закажите доставку</h2>
@@ -618,78 +623,79 @@
         </div>
       </section>
       <section class="section map" id="contacts">
-        <footer class="footer">
-          <div class="container">
-            <address class="contacts">
-              <div class="contacts__adr">Москва, ул. Новый Арбат, д. 31/12</div>
-              <a href="tel:88009039090" class="contacts__tel--green">8 800 903 90 90</a>
-            </address>
-            <div class="socials">
-              <ul class="socials__list">
-                <li class="socials__item">
-                  <a href="#" class="socials__link socials__link--vk">
-                    <svg class="socials__icon">
-                      <use xlink:href="img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link socials__link--fb">
-                    <svg class="socials__icon">
-                      <use xlink:href="img/sprite.svg#fb"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link socials__link--inst">
-                    <svg class="socials__icon">
-                      <use xlink:href="img/sprite.svg#inst"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link socials__link--tw">
-                    <svg class="socials__icon">
-                      <use xlink:href="img/sprite.svg#tw"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+        <div class="map__container" id="map">
+          <footer class="footer">
+            <div class="container">
+              <address class="contacts">
+                <div class="contacts__adr">Москва, ул. Новый Арбат, д. 31/12</div>
+                <a href="tel:88009039090" class="contacts__tel--green">8 800 903 90 90</a>
+              </address>
+              <div class="socials">
+                <ul class="socials__list">
+                  <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--vk">
+                      <svg class="socials__icon">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--fb">
+                      <svg class="socials__icon">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--inst">
+                      <svg class="socials__icon">
+                        <use xlink:href="img/sprite.svg#inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--tw">
+                      <svg class="socials__icon">
+                        <use xlink:href="img/sprite.svg#tw"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </footer>
-
+          </footer>
+        </div>
       </section>
     </main>
   </div>
   <div class="pagination">
     <ul class="pagination__list">
-      <li class="pagination__item pagination__item--active">
-        <a href="#" class="pagination__link pagination__link--active"></a>
+      <li class="pagination__item pagination__item--active active">
+        <a href="#" class="pagination__link" data-scroll-to="0"></a>
       </li>
       <li class="pagination__item">
-        <a href="#" class="pagination__link"></a>
+        <a href="#" class="pagination__link" data-scroll-to="1"></a>
       </li>
       <li class="pagination__item">
-        <a href="#" class="pagination__link"></a>
+        <a href="#" class="pagination__link" data-scroll-to="2"></a>
       </li>
       <li class="pagination__item">
-        <a href="#" class="pagination__link"></a>
+        <a href="#" class="pagination__link" data-scroll-to="3"></a>
       </li>
       <li class="pagination__item">
-        <a href="#" class="pagination__link"></a>
+        <a href="#" class="pagination__link" data-scroll-to="4"></a>
       </li>
       <li class="pagination__item">
-        <a href="#" class="pagination__link"></a>
+        <a href="#" class="pagination__link" data-scroll-to="5"></a>
       </li>
       <li class="pagination__item">
-        <a href="#" class="pagination__link"></a>
+        <a href="#" class="pagination__link" data-scroll-to="6"></a>
       </li>
       <li class="pagination__item">
-        <a href="#" class="pagination__link"></a>
+        <a href="#" class="pagination__link" data-scroll-to="7"></a>
       </li>
       <li class="pagination__item">
-        <a href="#" class="pagination__link"></a>
+        <a href="#" class="pagination__link" data-scroll-to="8"></a>
       </li>
     </ul>
   </div>
@@ -723,6 +729,7 @@
     </ul>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="template" class="modal-wrap">
     <div class="modal">
       <div class="modal__container">
@@ -731,12 +738,16 @@
       </div>
     </div>
   </script>
+  <script src="scripts/ops.js"></script>
   <script src="scripts/hamburger-menu.js"></script>
   <script src="scripts/slider-bars.js"></script>
   <script src="scripts/acco-team.js"></script>
   <script src="scripts/acco-taste.js"></script>
   <script src="scripts/slider-review.js"></script>
   <script src="scripts/form.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+  </script>
+  <script src="scripts/ymaps.js"></script>
 </body>
 
 </html>
