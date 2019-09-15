@@ -13,3 +13,135 @@
     z-index: $z-index-berries;
   }
 }
+
+.how__container {
+  width: 70%;
+
+  @include tablets {
+    width: 80%;
+  }
+
+  @include phones {
+    width: 85%;
+  }
+}
+
+.how__content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#video {
+//   max-width: 100%;
+//   max-height: 100%;
+//   height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.how__play {
+  position: absolute;
+  background: url('../img/icons/play.png') center center / contain no-repeat;
+  width: rem(82px);
+  height: rem(118px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+
+  @include tablets {
+    width: rem(73px);
+    height: rem(106px);
+  }
+
+  @include phones {
+    width: rem(49px);
+    height: rem(71px);
+  }
+}
+
+.how__play.how__play--active {
+  visibility: hidden;
+}
+
+.how__controls {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: rem(35px);
+  background-color: #3e3e3e;
+
+  @include tablets {
+    height: rem(31px);
+  }
+
+  @include phones {
+    height: rem(22px);
+    padding: 0 10px;
+  }
+}
+
+.how__block {
+  display: flex;
+  align-items: center;
+
+  &:first-child {
+    width: 70%;
+
+    @include tablets {
+      width: 60%;
+    }
+
+    @include phones {
+      margin-right: 10px;
+    }
+  }
+}
+
+.how__icon {
+  background: center center / contain no-repeat;
+  margin-right: rem(15px);
+  height: rem(22px);
+  
+  // @include phones {
+  //   height: 18px;
+  // }
+}
+.how__icon--play {
+  background-image: url('../img/icons/play_mini.png');
+  width: 16px;
+}
+
+.how__duration {
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  background-color: #626262;
+}
+
+.how__duration::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #626262;
+}
+
+.how__icon--volume {
+  position: relative;
+  background-image: url('../img/icons/volume_mini.png');
+  width: 18px;
+}
+
+.how__icon-line {
+    position: absolute;
+    width: 4px;
+    height: 26px;
+    transform: rotate(45deg);
+    top: -2px;
+    left: 8px;
+    background-color: #626262;
+    visibility: hidden;
+}

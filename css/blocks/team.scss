@@ -24,10 +24,6 @@
     left: 0;
     bottom: 1%;
   }
-
-  @include tablets {
-    height: initial;
-  }
 }
 
 .team__list {
@@ -89,6 +85,10 @@
   h3 {
     @include tablets {
       font-weight: 500;
+    }
+
+    @include phones {
+      font-size: 18px;
     }
   }
   h3:after {

@@ -6,3 +6,10 @@
   width: 100%;
   height: 100%;
 }
+
+.map__hint, .map__balloon {
+  font: 18px/1.7 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: $green;
+  padding: rem(5px);
+}

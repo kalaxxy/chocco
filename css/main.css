@@ -491,7 +491,7 @@ body {
 .wrapper {
   min-width: 0;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -641,6 +641,10 @@ textarea {
 .section-title--order {
   color: #0f5a47;
   margin-bottom: 4%;
+}
+
+.section-title--how {
+  margin-bottom: 6%;
 }
 
 @media screen and (max-width: 480px) {
@@ -970,10 +974,6 @@ textarea {
   margin-bottom: 0;
 }
 
-.pagination__item--active .pagination__link {
-  border: 1px solid #fff;
-}
-
 .pagination__link {
   display: block;
   position: relative;
@@ -999,6 +999,10 @@ textarea {
 }
 
 .pagination__link:hover {
+  border: 1px solid #fff;
+}
+
+.active.pagination__item .pagination__link {
   border: 1px solid #fff;
 }
 
@@ -1508,12 +1512,6 @@ textarea {
   bottom: 1%;
 }
 
-@media screen and (max-width: 768px) {
-  .team {
-    height: initial;
-  }
-}
-
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1584,6 +1582,12 @@ textarea {
 @media screen and (max-width: 768px) {
   .team__text h3 {
     font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team__text h3 {
+    font-size: 18px;
   }
 }
 
@@ -1977,6 +1981,162 @@ textarea {
   z-index: 1;
 }
 
+.how__container {
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .how__container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .how__container {
+    width: 85%;
+  }
+}
+
+.how__content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.how__play {
+  position: absolute;
+  background: url("../img/icons/play.png") center center/contain no-repeat;
+  width: 5.125rem;
+  height: 7.375rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  visibility: visible;
+}
+
+@media screen and (max-width: 768px) {
+  .how__play {
+    width: 4.5625rem;
+    height: 6.625rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .how__play {
+    width: 3.0625rem;
+    height: 4.4375rem;
+  }
+}
+
+.how__play.how__play--active {
+  visibility: hidden;
+}
+
+.how__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 2.1875rem;
+  background-color: #3e3e3e;
+}
+
+@media screen and (max-width: 768px) {
+  .how__controls {
+    height: 1.9375rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .how__controls {
+    height: 1.375rem;
+    padding: 0 10px;
+  }
+}
+
+.how__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how__block:first-child {
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .how__block:first-child {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .how__block:first-child {
+    margin-right: 10px;
+  }
+}
+
+.how__icon {
+  background: center center / contain no-repeat;
+  margin-right: 0.9375rem;
+  height: 1.375rem;
+}
+
+.how__icon--play {
+  background-image: url("../img/icons/play_mini.png");
+  width: 16px;
+}
+
+.how__duration {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  background-color: #626262;
+}
+
+.how__duration::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #626262;
+}
+
+.how__icon--volume {
+  position: relative;
+  background-image: url("../img/icons/volume_mini.png");
+  width: 18px;
+}
+
+.how__icon-line {
+  position: absolute;
+  width: 4px;
+  height: 26px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -2px;
+  left: 8px;
+  background-color: #626262;
+  visibility: hidden;
+}
+
 .order {
   color: #0f5a47;
   background: url("../img/bg/pattern.jpg");
@@ -2154,10 +2314,20 @@ textarea {
   margin-top: 1.4375rem;
 }
 
-.map__container {
+.map {
   position: relative;
+}
+
+.map__container {
   width: 100%;
   height: 100%;
+}
+
+.map__hint, .map__balloon {
+  font: 18px/1.7 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #0f5a47;
+  padding: 0.3125rem;
 }
 
 .footer {
@@ -2167,6 +2337,7 @@ textarea {
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 10;
 }
 
 @media screen and (max-width: 480px) {
@@ -2180,6 +2351,9 @@ textarea {
             flex-direction: column;
     padding: 20px;
     text-align: center;
+  }
+  .footer .container .contacts {
+    margin-right: 0;
   }
 }
 

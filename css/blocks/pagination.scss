@@ -17,12 +17,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-
-  &--active {
-    .pagination__link {
-      border: 1px solid #fff;
-    }
-  }
 }
 
 .pagination__link {
@@ -47,6 +41,12 @@
   }
 
   &:hover {
+    border: 1px solid #fff;
+  }
+}
+
+.active.pagination__item {
+  .pagination__link {
     border: 1px solid #fff;
   }
 }
