@@ -2,4 +2,8 @@
   height: 100vh;
   min-height: rem(650px);
   display: flex;
+
+  @include phones {
+    height: 100%
+  }
 }

@@ -6,12 +6,11 @@ let onePageScroll = () => {
   
   let inScroll = false;
   
-  const mobileDetect = new MobileDetect(window.navigator.userAgent);
-  const isMobile = mobileDetect.mobile();
-
   addNavigation();
   wheel();
   keyPush();
+
+  if(isMobileDevice()) swipe();
   
   function doTransition(pageNumber) {
     const position  = `${pageNumber * (-100)}%`;
@@ -64,7 +63,7 @@ let onePageScroll = () => {
         scrollToPage('up');
           break;
         case 38:
-          ('down');
+        scrollToPage('down');
           break;
         default:
           break;
@@ -101,21 +100,36 @@ let onePageScroll = () => {
     };
   };
 
-  if (isMobile) {
-    window.addEventListener('touchmove', e => {
-      e.preventDefault();
-    },
-    { passive: false });
-
-    $('body').swipe({
-      swipe: (event, direct) => {
-        let scrollDirection;
-        if (direct === 'up') scrollDirection = 'up';
-        if (direct === 'down') scrollDirection = 'down';
-        scrollToPage(scrollDirection);
+    function swipe() {
+    let touchStartY = 0;
+    let touchEndY = 0;
+    const wrapper = document.querySelector('.wrapper');
+    
+    document.addEventListener('touchstart', e => {
+      touchStartY = e.changedTouches[0].screenY;
+    }, false);
+    
+    wrapper.addEventListener('touchmove', e => e.preventDefault());
+    
+    document.addEventListener('touchend', e => {
+      touchEndY = e.changedTouches[0].screenY;
+      let direct = swipeDirect();
+      scrollToPage(direct);
+    }, false);
+    
+    function swipeDirect() {
+      let dif = touchStartY - touchEndY;
+      if (dif > 100) {
+        return 'up';
+      } else if (dif < - 100) {
+        return  'down';
       }
-    });
-  };
+    }
+  }
+
+  function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
 };
 
 onePageScroll();

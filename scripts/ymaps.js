@@ -32,7 +32,7 @@ function init() {
     center: [55.75, 37.60],
     zoom: 14,
     controls: ['zoomControl'],
-    behaviors: ['drag']
+    behaviors: ['drag', 'scrollZoom.disabled'],
   });
 
   placemarks.forEach(function(obj){
